@@ -1,0 +1,49 @@
+{
+  "home": {
+    "interpret": "Tumačenje snova",
+    "journal": "Dnevnik snova",
+    "lucid": "Trening lucidnog sanjanja",
+    "media": "Multimedija",
+    "plans": "Pristup / Planovi"
+  },
+  "interpretation": {
+    "enterDream": "Unesite san pre izbora metode.",
+    "chosen": "Izabrana metoda",
+    "dream": "Vaš san",
+    "dreamPH": "Opišite san...",
+    "feelings": "Kako ste se osećali po buđenju?",
+    "feelingsPH": "npr. mirno, anksiozno, puno nade...",
+    "events": "Skorašnji važni događaji",
+    "eventsPH": "Posao, odnosi, zdravlje, putovanja...",
+    "scientific": "Naučna (Jung/Frojd/Szondi)",
+    "traditional": "Tradicionalna (Sanovnik)"
+  },
+  "journal": {
+    "newEntry": "Novi unos",
+    "edit": "Uredi unos",
+    "untitled": "Bez naslova",
+    "empty": "Još uvek nema unosa.",
+    "titlePH": "Naslov",
+    "contentPH": "Upišite san...",
+    "sendToInterpretation": "Pošalji na tumačenje"
+  },
+  "lucid": {
+    "tapToOpen": "Dodirnite za otvaranje",
+    "lesson": "Lekcija",
+    "lessonBody": "TODO: Sadržaj lekcije biće učitan sa backend-a."
+  },
+  "media": {
+    "header": "Muzika za relaks i binauralni tonovi"
+  },
+  "plans": {
+    "header": "Pristup i cene",
+    "freeLimits": "Osnovna tumačenja, dnevnik i pregled multimedije.",
+    "premiumLimits": "Puna tumačenja, napredne lekcije i cela medija biblioteka.",
+    "freePrice": "0 €/mes",
+    "premiumPrice": "€ /mes (TBD)"
+  },
+  "common": {
+    "save": "Sačuvaj",
+    "delete": "Obriši"
+  }
+}

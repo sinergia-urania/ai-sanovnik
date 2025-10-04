@@ -1,0 +1,13 @@
+{
+  "cli": { "version": ">= 11.0.0" },
+  "build": {
+    "development": {
+      "android": { "buildType": "apk" },
+      "env": {
+        "SUPABASE_URL": "https://https://pqomntabagdzbgaswxoy.supabase.co",
+
+        "SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBxb21udGFiYWdkemJnYXN3eG95Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk1MDczODcsImV4cCI6MjA3NTA4MzM4N30.3bdbL5geyPx791JRLtqp36lewbfCyEwodO0QUEaYpLQ"
+      }
+    }
+  }
+}

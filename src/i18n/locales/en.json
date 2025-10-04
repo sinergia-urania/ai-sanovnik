@@ -1,0 +1,50 @@
+
+{
+  "home": {
+    "interpret": "Dream Interpretation",
+    "journal": "Dream Journal",
+    "lucid": "Lucid Dream Training",
+    "media": "Multimedia",
+    "plans": "Access / Plans"
+  },
+  "interpretation": {
+    "enterDream": "Please enter your dream first.",
+    "chosen": "Chosen method",
+    "dream": "Your dream",
+    "dreamPH": "Type your dream here...",
+    "feelings": "How did you feel after waking?",
+    "feelingsPH": "e.g., calm, anxious, hopeful...",
+    "events": "Recent important events",
+    "eventsPH": "Work, relationships, health, travel...",
+    "scientific": "Scientific (Jung/Freud/Szondi)",
+    "traditional": "Traditional (Sanovnik)"
+  },
+  "journal": {
+    "newEntry": "New entry",
+    "edit": "Edit entry",
+    "untitled": "Untitled",
+    "empty": "No entries yet.",
+    "titlePH": "Title",
+    "contentPH": "Write your dream...",
+    "sendToInterpretation": "Send to Interpretation"
+  },
+  "lucid": {
+    "tapToOpen": "Tap to open",
+    "lesson": "Lesson",
+    "lessonBody": "TODO: Lesson content will be loaded from backend."
+  },
+  "media": {
+    "header": "Relax music & binaural tones"
+  },
+  "plans": {
+    "header": "Access & Pricing",
+    "freeLimits": "Basic interpretation limits, journal & media previews.",
+    "premiumLimits": "Full interpretations, advanced lessons & full media library.",
+    "freePrice": "0 €/mo",
+    "premiumPrice": "€ /mo (TBD)"
+  },
+  "common": {
+    "save": "Save",
+    "delete": "Delete"
+  }
+}
