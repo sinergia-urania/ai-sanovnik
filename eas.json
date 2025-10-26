@@ -2,11 +2,44 @@
   "cli": { "version": ">= 11.0.0" },
   "build": {
     "development": {
+      "developmentClient": true,
+      "distribution": "internal",
       "android": { "buildType": "apk" },
       "env": {
-        "SUPABASE_URL": "https://https://pqomntabagdzbgaswxoy.supabase.co",
-
-        "SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBxb21udGFiYWdkemJnYXN3eG95Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk1MDczODcsImV4cCI6MjA3NTA4MzM4N30.3bdbL5geyPx791JRLtqp36lewbfCyEwodO0QUEaYpLQ"
+        "EXPO_PUBLIC_SUPABASE_URL": "https://pqomntabagdzbgaswxoy.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBxb21udGFiYWdkemJnYXN3eG95Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk1MDczODcsImV4cCI6MjA3NTA4MzM4N30.3bdbL5geyPx791JRLtqp36lewbfCyEwodO0QUEaYpLQ",
+        "EXPO_PUBLIC_ANDROID_PACKAGE": "com.mare82.aisanovnik",
+        "EXPO_PUBLIC_IOS_APP_ID": "0",
+        "EXPO_PUBLIC_TAROT_ANDROID_PACKAGE": "com.mare82.tarotmobile",
+        "EXPO_PUBLIC_TAROT_IOS_APP_ID": "0",
+        "EXPO_PUBLIC_TAROT_MARKETING_URL": "https://infohelm.org/una-astro-tarot-ai"
+      }
+    },
+    "preview": {
+      "developmentClient": false,
+      "distribution": "internal",
+      "android": { "buildType": "apk" },
+      "env": {
+        "EXPO_PUBLIC_SUPABASE_URL": "https://pqomntabagdzbgaswxoy.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBxb21udGFiYWdkemJnYXN3eG95Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk1MDczODcsImV4cCI6MjA3NTA4MzM4N30.3bdbL5geyPx791JRLtqp36lewbfCyEwodO0QUEaYpLQ",
+        "EXPO_PUBLIC_ANDROID_PACKAGE": "com.mare82.aisanovnik",
+        "EXPO_PUBLIC_IOS_APP_ID": "0",
+        "EXPO_PUBLIC_TAROT_ANDROID_PACKAGE": "com.mare82.tarotmobile",
+        "EXPO_PUBLIC_TAROT_IOS_APP_ID": "0",
+        "EXPO_PUBLIC_TAROT_MARKETING_URL": "https://infohelm.org/una-astro-tarot-ai"
+      }
+    },
+    "production": {
+      "developmentClient": false,
+      "android": { "buildType": "app-bundle" },
+      "env": {
+        "EXPO_PUBLIC_SUPABASE_URL": "https://pqomntabagdzbgaswxoy.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBxb21udGFiYWdkemJnYXN3eG95Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk1MDczODcsImV4cCI6MjA3NTA4MzM4N30.3bdbL5geyPx791JRLtqp36lewbfCyEwodO0QUEaYpLQ",
+        "EXPO_PUBLIC_ANDROID_PACKAGE": "com.mare82.aisanovnik",
+        "EXPO_PUBLIC_IOS_APP_ID": "0",
+        "EXPO_PUBLIC_TAROT_ANDROID_PACKAGE": "com.mare82.tarotmobile",
+        "EXPO_PUBLIC_TAROT_IOS_APP_ID": "0",
+        "EXPO_PUBLIC_TAROT_MARKETING_URL": "https://infohelm.org/una-astro-tarot-ai"
       }
     }
   }

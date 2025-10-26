@@ -1,49 +1,61 @@
 {
   "expo": {
-    "name": "ai-sanovnik",
+    "name": "AI Sanovnik",
     "slug": "ai-sanovnik",
-    "version": "1.0.0",
+    "owner": "mare82",
+    "version": "1.3.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "aisanovnik",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
-    "ios": {
-      "supportsTablet": true
-    },
+    "scheme": "com.mare82.aisanovnik",
+
     "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
-      },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
-    },
-    "web": {
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
-    },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
-          "dark": {
-            "backgroundColor": "#000000"
-          }
-        }
+      "package": "com.mare82.aisanovnik",
+      "googleServicesFile": "google-services.json",
+      "versionCode": 3,
+      "permissions": [
+        "com.google.android.gms.permission.AD_ID",
+        "android.permission.POST_NOTIFICATIONS"
+       
       ],
-      "expo-localization"
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": false,
+          "category": ["BROWSABLE", "DEFAULT"],
+          "data": [
+            { "scheme": "com.mare82.aisanovnik", "host": "auth", "pathPrefix": "/callback" },
+            { "scheme": "com.mare82.aisanovnik", "host": "auth" },
+            { "scheme": "com.mare82.aisanovnik", "host": "auth", "pathPattern": ".*" }
+          ]
+        }
+      ]
+    },
+
+    "ios": {
+      "bundleIdentifier": "com.mare82.aisanovnik",
+      "infoPlist": {
+        "NSUserTrackingUsageDescription": "Used to show relevant ads and support the app."
+      }
+    },
+
+    "plugins": [
+      "expo-dev-client",
+      ["expo-audio", { "microphonePermission": "Allow AI Sanovnik to access your microphone." }],
+      "expo-tracking-transparency",
+      "expo-web-browser",
+      "expo-notifications",
+      ["react-native-google-mobile-ads", {
+        "androidAppId": "ca-app-pub-2786609619751533~9204499845",
+        "iosAppId": "ca-app-pub-2786609619751533~1584002451"
+      }]
     ],
-    "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
+
+    "notification": {
+      "iosDisplayInForeground": true,
+      "color": "#9b87f5"
+    },
+
+    "extra": {
+      "eas": { "projectId": "e5abc1e7-6bb5-4c80-bb82-42c30f17d129" }
     }
   }
 }

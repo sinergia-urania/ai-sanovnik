@@ -1,50 +1,313 @@
-
 {
   "home": {
     "interpret": "Dream Interpretation",
     "journal": "Dream Journal",
     "lucid": "Lucid Dream Training",
-    "media": "Multimedia",
+    "media": "Media",
     "plans": "Access / Plans"
   },
   "interpretation": {
     "enterDream": "Please enter your dream first.",
-    "chosen": "Chosen method",
+    "chosen": "Selected method",
     "dream": "Your dream",
-    "dreamPH": "Type your dream here...",
-    "feelings": "How did you feel after waking?",
-    "feelingsPH": "e.g., calm, anxious, hopeful...",
+    "dreamPH": "Write your dream here…",
+    "feelings": "How did you feel after waking up?",
+    "feelingsPH": "e.g., calm, anxious, hopeful…",
     "events": "Recent important events",
-    "eventsPH": "Work, relationships, health, travel...",
+    "eventsPH": "Work, relationships, health, travel…",
     "scientific": "Scientific (Jung/Freud/Szondi)",
-    "traditional": "Traditional (Sanovnik)"
+    "traditional": "Traditional (Dreambook)",
+    "scientificShort": "Scientific",
+    "traditionalShort": "Traditional",
+    "adNoticePreAnswer": "A short ad may appear before the answer."
   },
   "journal": {
+    "details": "Dream",
     "newEntry": "New entry",
     "edit": "Edit entry",
     "untitled": "Untitled",
     "empty": "No entries yet.",
     "titlePH": "Title",
-    "contentPH": "Write your dream...",
-    "sendToInterpretation": "Send to Interpretation"
+    "contentPH": "Write your dream…",
+    "sendToInterpretation": "Send for interpretation",
+    "saveToJournal": "Save to journal",
+    "openJournal": "Open journal",
+    "contentRequired": "Enter the dream content.",
+    "lockedBody": "Dream Journal is available starting from the Premium plan.",
+    "filter": {
+      "all": "All",
+      "notes": "Notes only",
+      "interpreted": "Interpreted"
+    }
   },
   "lucid": {
     "tapToOpen": "Tap to open",
     "lesson": "Lesson",
-    "lessonBody": "TODO: Lesson content will be loaded from backend."
+    "lessonBody": "TODO: Lesson content will be loaded from the backend.",
+    "lockedBody": "Lucid training is available on the PRO plan."
   },
   "media": {
-    "header": "Relax music & binaural tones"
+    "header": "Relax music & binaural tones",
+    "tapToPlay": "Tap to play",
+    "lockedBody": "Media is available on the PRO plan.",
+    "sections": {
+      "binaural": "Binaural",
+      "shortRelax": "Short relax (≤15m)",
+      "longRelax": "Long relax & meditation"
+    },
+    "controls": {
+      "play": "Play",
+      "pause": "Pause",
+      "stop": "Stop"
+    },
+    "badge": {
+      "playing": "Playing"
+    }
   },
   "plans": {
-    "header": "Access & Pricing",
-    "freeLimits": "Basic interpretation limits, journal & media previews.",
-    "premiumLimits": "Full interpretations, advanced lessons & full media library.",
+    "header": "Access & pricing",
+    "freeLimits": "Basic interpretation limits, journal and media browsing.",
+    "premiumLimits": "Full interpretations, advanced lessons and complete media library.",
     "freePrice": "0 €/mo",
-    "premiumPrice": "€ /mo (TBD)"
+    "premiumPrice": "€/mo (TBD)"
+  },
+  "result": {
+    "interpretation": "Interpretation",
+    "tryTraditional": "Try the traditional method",
+    "tryScientific": "Try the scientific method",
+    "useOneInterpretationTitle": "Use 1 interpretation?",
+    "useOneInterpretationBody": "Trying another method will spend 1 interpretation.",
+    "waiting": "Waiting for the response…",
+    "summary": "Summary",
+    "keySymbols": "Key symbols",
+    "meanings": "Possible meanings",
+    "advice": "Gentle advice",
+    "method": "Method",
+    "rationale": "Why this method",
+    "methods": {
+      "jung": "Jung",
+      "freud": "Freud",
+      "szondi": "Szondi"
+    }
+  },
+  "billing": {
+    "notEnoughTokensTitle": "No interpretations left",
+    "notEnoughTokensBody": "Upgrade your plan or top up your balance to try another method."
+  },
+  "stt": {
+    "start": "Start recording",
+    "stop": "Stop",
+    "speak": "Speak",
+    "listening": "Listening…"
   },
   "common": {
+    "unknown": "Unknown",
     "save": "Save",
-    "delete": "Delete"
+    "delete": "Delete",
+    "home": "Home",
+    "answer": "Answer",
+    "cancel": "Cancel",
+    "continue": "Continue",
+    "ok": "OK",
+    "upgrade": "Upgrade",
+    "saved": "Saved",
+    "deleted": "Deleted",
+    "promo": {
+      "title": "Try our new app",
+      "cta": "Una Astro-Tarot AI"
+    },
+    "membership": {
+      "title": "Plans & Subscriptions",
+      "packages": {
+        "free": "Free",
+        "premium": "Premium",
+        "pro": "PRO"
+      },
+      "labels": {
+        "perMonth": "per month",
+        "currentPlan": "Plan:"
+      },
+      "features": {
+        "journal": "Dream Journal",
+        "lucid": "Lucid training",
+        "media": "Media",
+        "ads": "Ads"
+      },
+      "values": {
+        "aiModel": "AI model: {{model}}",
+        "cap": "CAP bank: {{cap}}",
+        "noBank": "Bank: none",
+        "model": "AI model: {{model}}",
+        "capWithBank": "CAP bank: {{cap}}",
+        "capNoBank": "Bank: none"
+      },
+      "cta": {
+        "buyPremium": "Buy Premium ({{price}} {{currency}}/mo)",
+        "buyPro": "Buy PRO ({{price}} {{currency}}/mo)",
+        "free": "Stay on Free",
+        "currentPlan": "Current plan",
+        "downgradeNoCharge": "Downgrade without charge"
+      },
+      "notes": {
+        "cancelPolicy": "Canceling switches to Free on the subscription renewal date. CAP limits the maximum and there is no balance decay.",
+        "upgradeRules": "Upgrade: Premium +30 immediately; Free→Pro +50, Premium→Pro +50. Downgrade Pro→Premium: balance is cut to CAP 90. Free monthly limit: 10."
+      },
+      "toast": {
+        "planChanged": "Plan changed successfully.",
+        "downgradeNoCharge": "Downgrade without charge. No instant bonus."
+      },
+      "wallet": {
+        "line": "Wallet: {{balance}}"
+      },
+      "proplus": {
+        "title": "ProPlus (annual)",
+        "desc": "600 interpretations instantly + no CAP, valid for 12 months.",
+        "buyCta": "Buy ProPlus ({{price}} {{currency}}/year)",
+        "activeCta": "ProPlus is active",
+        "activeLine": "ProPlus: {{remaining}} (expires {{date}}) · Wallet: {{balance}}",
+        "successTitle": "ProPlus activated!",
+        "successBody": "600 added and the plan is locked until expiry.",
+        "lockTitle": "ProPlus is active",
+        "lockBody": "Plan changes are disabled while ProPlus is active.",
+        "best": "Best offer"
+      },
+      "addons": {
+        "buyPack20": "Buy +20 top-up ({{price}} {{currency}})",
+        "blockedFreeTitle": "Not available on the Free plan",
+        "blockedFreeBody": "Top-ups are not available on the Free plan.",
+        "limitReachedTitle": "Limit reached",
+        "limitReachedBody": "You can’t add more credit on this plan.",
+        "partialTitle": "Partial top-up",
+        "partialBody": "Due to package limits, only {{count}} of 20 can be added.",
+        "partialCta": "Add {{count}}",
+        "okProPlus": "Added to ProPlus balance!",
+        "okWallet": "Top-up successful",
+        "nothing": "Nothing added (limit reached)",
+        "added": "Added: {{added}}"
+      },
+      "cancel": {
+        "schedule": "Cancel at end of cycle",
+        "undo": "Undo cancellation",
+        "scheduled": "Cancellation scheduled for the end of the cycle.",
+        "reverted": "Cancellation removed.",
+        "scheduledAt": "Scheduled switch to FREE",
+        "confirmTitle": "Are you sure you want to cancel?",
+        "confirmBody": "You will switch to FREE at the end of the current billing cycle.",
+        "confirmCta": "Cancel plan",
+        "undoTitle": "Remove cancellation?",
+        "undoBody": "You will keep your current plan after renewal.",
+        "undoCta": "Undo"
+      }
+    },
+    "menu": {
+      "profile": "Profile",
+      "settings": "Settings",
+      "about": "About",
+      "plans": "Plans",
+      "support": "Rate & Share",
+      "contact": "Contact"
+    },
+    "support": {
+      "title": "Support",
+      "rate": "Rate the app",
+      "share": "Share with friends",
+      "shareMessage": "I recommend DreamCodex AI — dream interpretation and lucid dreaming: "
+    },
+    "buttons": {
+      "close": "Close",
+      "cancel": "Cancel"
+    },
+    "settings": {
+      "title": "Settings",
+      "mute": "Mute",
+      "volume": "Volume",
+      "language": "Language",
+      "chooseLanguage": "Choose language",
+      "notifications": "Notifications"
+    },
+    "legal": {
+      "title": "Legal",
+      "disclaimer": "Disclaimer",
+      "terms": "Terms of Use",
+      "privacy": "Privacy Policy",
+      "dataDeletion": "Data Deletion"
+    },
+    "labels": {
+      "updatedAt": "Updated",
+      "openOnWeb": "Open on web"
+    },
+    "app": {
+      "name": "DreamCodex AI"
+    },
+    "profile": {
+      "title": "Profile",
+      "displayName": "Display name",
+      "displayNamePH": "e.g., Mira",
+      "plan": "Plan",
+      "balance": "Balance",
+      "allowance": "Monthly top-up",
+      "cap": "CAP",
+      "started": "Cycle from",
+      "nextTopup": "Next top-up",
+      "managePlan": "Manage plan",
+      "available": "Available (total)",
+      "proplus": "ProPlus balance",
+      "proplusExpiry": "ProPlus expires",
+      "wallet": "Wallet",
+      "linkApple": "Link Apple account",
+      "appleLinked": "Apple account is linked ✔",
+      "appleLinkedOk": "Apple account linked.",
+      "appleLinkedMissing": "I can't see a linked Apple account. Please try again.",
+      "signedInAs": "Signed in as",
+      "signedOut": "You are not signed in"
+    },
+    "messages": {
+      "successTitle": "Success!",
+      "saved": "Saved."
+    },
+    "errors": {
+      "genericTitle": "Error",
+      "tryAgain": "Please try again.",
+      "notLoggedIn": "You are not logged in.",
+      "clientReqIdMissing": "Client request ID is missing.",
+      "notFound": "Not found."
+    },
+    "misc": {
+      "loading": "Loading…",
+      "cancel": "Cancel"
+    },
+    "login": "Login",
+    "logout": "Log out",
+    "logoutConfirm": {
+      "title": "Log out?",
+      "body": "You will be signed out on this device.",
+      "cta": "Log me out"
+    }
+  },
+  "login": {
+    "title": "Login",
+    "subtitle": "Sign in to continue",
+    "emailPlaceholder": "your@email.com",
+    "send": "Send magic link",
+    "sending": "Sending…",
+    "enterEmail": "Enter your email address.",
+    "checkInbox": "Check your inbox — we’ve sent a login link.",
+    "error": "Something went wrong.",
+    "continueFacebook": "Continue with Facebook",
+    "continueGoogle": "Continue with Google",
+    "continueApple": "Continue with Apple",
+    "magicTitle": "Or sign in with Magic Link",
+    "emailPH": "your@email.com",
+    "sendMagic": "Send Magic Link",
+    "hint": "If you aren’t redirected automatically, open the link on this device.",
+    "tryAgain": "Please try again.",
+    "oauthFailed": "OAuth flow failed."
+  },
+  "audio": {
+    "errors": {
+      "invalidMeta": "Invalid media metadata (missing id).",
+      "unknownId": "Unknown media id: {{id}}",
+      "playback": "Playback error."
+    }
   }
 }

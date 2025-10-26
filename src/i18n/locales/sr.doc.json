@@ -1,0 +1,451 @@
+
+{
+  "disclaimer": {
+    "title": "Odricanje odgovornosti",
+    "updatedAt": "2025-10-08",
+    "bodyMd": "# Odricanje odgovornosti\n\nDreamCodex AI nudi tumačenje snova, dnevnik i multimedijalne sadržaje **isključivo u informativne i edukativne svrhe**. Sadržaj koji generiše aplikacija (uključujući AI odgovore) **nije** medicinski, psihološki, pravni niti bilo kakav drugi profesionalni savet.\n\n## Nije zamena za stručnu pomoć\n- Ne koristite aplikaciju kao zamenu za profesionalnu dijagnostiku, lečenje ili savetovanje.\n- Ako imate brige u vezi fizičkog ili mentalnog zdravlja, obratite se kvalifikovanom stručnjaku (npr. licenciranom lekaru, psihologu ili savetniku).\n\n## Hitne situacije\nAko se osećate ugroženo ili imate hitan slučaj, **pozovite lokalni broj hitnih službi** (npr. 192 / 193 / 194 / 112) ili odmah potražite pomoć nadležnih službi.\n\n## Ograničenja AI-a\n- Sadržaj koji generiše AI može biti **neprecizan, nepotpun ili pristrasan**.\n- Tumačenja i predlozi **nisu garancija** ishoda.\n- Sami snosite odgovornost za način na koji koristite informacije u aplikaciji.\n\n## Multimedija i bezbednost\n- Audio zapisi (relaksacija, binauralni tonovi) namenjeni su za mirno, sedeće ili ležeće slušanje.\n- **Ne** slušajte tokom vožnje, rukovanja mašinama ili u situacijama koje zahtevaju punu pažnju.\n- Ako osetite nelagodnost, odmah prekinite slušanje.\n\n## Uzrast i roditeljski nadzor\nAplikacija je namenjena **odraslima**. Maloletnici je treba da koriste samo uz **roditeljski nadzor**.\n\n## Privatnost\nObrađujemo informacije koje unosite kako bismo pružili uslugu. Detalje pogledajte u **Politici privatnosti** u odeljku *Pravna dokumenta*.\n\n## Izmene\nOvaj dokument se povremeno može menjati. Proverite datum iznad.\n\nAko imate pitanja, kontaktirajte nas kroz aplikaciju ili na listingu prodavnice."
+  },
+  "about": {
+    "title": "O DreamCodex AI aplikaciji",
+    "updatedAt": "2025-10-08",
+    "bodyMd": "# DreamCodex AI — O aplikaciji\n\n**DreamCodex AI** je tvoj saputnik za tumačenje snova, samorefleksiju i svesno sanjanje.\n\nSpaja dve komplementarne metode:\n\n- **Naučna metoda (Jung / Frojd / Sondi):** simbolička analiza, arhetipovi, afekat i kontekst.\n- **Tradicionalna metoda:** narodno i ezoterijsko simboličko nasleđe kroz vekove.\n\nMetode možeš koristiti **odvojeno** ili **kombinovano** radi bogatije sinteze.\n\n---\n\n## Kako funkcioniše\n1. **Unesi san** — kucanjem ili preko **govor-u-tekst** (speech-to-text).\n2. Izaberi **metod** (Naučna / Tradicionalna) ili ih **kombinuj**.\n3. Tvoj **plan** (Free / Premium / Pro) automatski primenjuje odgovarajući AI model i funkcije.\n4. Dobijaš jasno tumačenje sa praktičnim uvidima i pitanjima za refleksiju.\n\n---\n\n## Funkcije\n- ✍️ Brz unos (**govor-u-tekst**)\n- 🧠 **Naučna** analiza (Jung / Frojd / Sondi)\n- 🕯️ **Tradicionalno** tumačenje simbola\n- 🧾 **Dnevnik snova** (Premium/Pro)\n- 🌙 **Trening lucidnog sanjanja** (Pro)\n- 🎧 **Binauralni/ambijentalni** audio (Pro)\n- 🌐 Više jezika + tamna tema\n\n---\n\n## Filozofija\nPoštujemo misteriju snova uz utemeljene psihološke i tradicionalne okvire. DreamCodex AI je **podržavajuć**, **nedogmatski** i podstiče **samouvid**.\n\n---\n\n## Kvote i Banka 🏦🪙\nSvaki plan ima mesečni broj tumačenja (**Free 10**, **Premium 30**, **Pro 50**). Free se svakog meseca resetuje na **10** i ne akumulira; Premium i Pro mogu da prenesu neiskorišćeno do limita banke (**Premium 90**, **Pro 150**). Jedno tumačenje se troši kada se AI odgovor prikaže na ekranu **Rezultat**."
+  },
+
+  "tonight": "Večeras:",
+  "playNow": "Pusti sada (relaks):",
+  "lucid": {
+    "ld-00-intro": {
+      "title": "Kako funkcioniše ovaj trening",
+      "summary": "Šta radimo i kako da koristiš aplikaciju (dnevnik + audio) za noćnu praksu.",
+      "content": [
+        "Dobrodošao/la! Trening koristi kratke lekcije (5–8 min) plus po jedan mali zadatak svake noći.",
+        "Šta ćeš naučiti: jače sećanje snova, reality check-ove, prepoznavanje sanovnih znakova, MILD, WBTB, WILD, stabilizaciju, blagu kontrolu, rad sa noćnim morama i etiku.",
+        "Alati u aplikaciji: Dnevnik snova (zapiši odmah po buđenju), Trening lucidnosti (ove lekcije) i Medija (relaks i binauralni tonovi).",
+        "Audio: pusti tihu relaks traku (npr. \"Alpha Relax 10m/15m\") na slušalice, tiho, pre spavanja ili tokom WBTB pauze.",
+        "Bezbednost: ne slušaj u vožnji ili u situacijama koje traže punu pažnju. Prekini ako osetiš nelagodnost.",
+        "Navike koje pomažu: konzistentan prozor spavanja, prigušeni ekrani, izbegavanje teške hrane i alkohola kasno, kratka vežba disanja i jasna namera.",
+        "Drži dnevnik i olovku/telefon pored kreveta; piši čim se probudiš — sećanje bledi za par minuta.",
+        "Očekivanja: prvi lucidni san često dođe posle uporne prakse (2–4 nedelje za mnoge početnike, nekad brže, nekad sporije). Kontinuitet pobeđuje intenzitet."
+      ],
+      "tonight": "Pre spavanja otvori Medija i pusti \"Alpha Relax 10m\" tiho. Po buđenju napiši bar 3 rečenice o snu. Odaberi jedan jednostavan reality check za sutra (npr. prebroj prste ili proba štipanja nosa)."
+    },
+    "ld-01-sleep-rem": {
+      "title": "Osnove spavanja i REM-a",
+      "summary": "Zašto su 90-min ciklusi bitni i zašto lucidnost voli kasni REM.",
+      "content": [
+        "## Ukratko o ciklusima spavanja",
+        "- Jedan tipičan ciklus traje oko ~90 minuta.",
+        "- REM faze se produžavaju ka jutru (najbolji prozor za lucidnost).",
+        "- Kratka buđenja između ciklusa su normalna i mogu biti korisna.",
+        "Cilj: Razumi svoj ritam i prepoznaj kasni REM prozor.",
+        "Vežba: Naredne 3 noći zabeleži vreme odlaska na spavanje, približno uspavljivanje, vremena buđenja i osećaj odmorenosti.",
+        "Napomena: Nisu potrebni savršeni podaci — dovoljne su procene.",
+        "## Zašto ovo pomaže lucidnosti",
+        "- Umesto nasumičnih pokušaja, tempiraš MILD/WBTB prema kasnom REM-u.",
+        "- Kratko fokus disanje pre sna smanjuje kognitivnu buku."
+      ],
+      "tonight": "Zapiši planirano vreme odlaska na spavanje i buđenja za večeras. Stavi dnevnik i olovku/telefon pored kreveta. Po buđenju upiši vreme i 3 rečenice o snu ili utiscima."
+    },
+    "ld-02-dream-journal": {
+  "title": "Sećanje snova i Dnevnik",
+  "summary": "Izgradi naviku sećanja — temelj lucidnosti.",
+  "content": [
+    "## Zašto prvo sećanje",
+    "- Više sećanja = više prilika da kasnije uočiš sanovne znakove.",
+    "- Pisanje odmah po buđenju učvršćuje pamćenje.",
+    "- Zlatno pravilo: piši pre ekrana.",
+    "Cilj: Dostigni konzistentno sećanje bar 3 noći nedeljno.",
+    "Vežba: Po buđenju napiši najmanje 3 rečenice. Uključi osećanja i upečatljive slike. Ako nema ničeg, zapiši \"Bez sećanja\" + bilo koji fragment ili telesni osećaj.",
+    "Napomena: Dnevnik drži pored kreveta, svetlo prigušeno; izbegni skrolovanje. Koristi brzo govorno diktiranje ako ti je lakše od kucanja.",
+    "## Kako pisati brzo",
+    "- Naslov = datum + osećaj (npr. \"2025-10-13 · mirno\").",
+    "- 3P skica: ko / gde / šta najpre.",
+    "- Obeleži moguće sanovne znakove sa [*] za kasniji pregled.",
+    "- Analizu preskoči sada; prvo uhvati sirov materijal.",
+    "## Oznake za kasnije",
+    "- Oznake za ljude/mesta koja se ponavljaju; intenzitet 1–5.",
+    "- Po želji: upiši deo noći ako si se budio/la između ciklusa."
+  ],
+  "tonight": "Stavi dnevnik i olovku/telefon pored kreveta i postavi nameru: \"Setiću se snova.\" Po buđenju odmah napiši najmanje 3 rečenice. Ako nema ničeg, zapiši \"Bez sećanja\" i jedan telesni osećaj (npr. toplina, otkucaji)."
+},
+"ld-03-dream-signs": {
+  "title": "Sanovni znakovi — prepoznaj svoje obrasce",
+  "summary": "Nauči da uočavaš lične tragove koji se često pojavljuju u tvojim snovima.",
+  "content": [
+    "## Šta su sanovni znakovi",
+    "- Kontekstualni: ljudi, mesta, teme koje se ponavljaju (škola, bivši/a, kuća iz detinjstva).",
+    "- Anomalije forme: “topi” se tekst, nečitljive oznake, satovi koji se menjaju.",
+    "- Fizički “glitch”: letenje, prolazak kroz zid, telefoni koji ne rade.",
+    "- Emocionalni skokovi: strah, ushićenje, hitnost bez jasnog razloga.",
+    "Cilj: Napravi kratak spisak tvoja 3 glavna sanovna znaka.",
+    "Vežba: Pregledaj poslednjih 5 zapisa u dnevniku i obeleži [*] pored svih ponavljajućih ljudi, mesta, radnji ili nemogućnosti.",
+    "Napomena: Traži obrasce, ne retke izuzetke.",
+    "## Od znakova do okidača",
+    "- Veži po jedan Reality Check (RC) za svaki znak.",
+    "- Radi RC u budnom životu samo kada se taj znak (ili sličan “dnevni” ekvivalent) pojavi.",
+    "- Održavaj blag, radoznao stav — bez forsiranja.",
+    "## Brzi RC predlozi",
+    "- Pročitaj red teksta dva puta (da li se menja?).",
+    "- Pokušaj da gurneš prst kroz dlan (stvarno se zapitaj da li sanjaš).",
+    "- Uštini nos i pokušaj da dišeš.",
+    "- Proveri vreme na satu/digitalnom ekranu dva puta."
+  ],
+  "tonight": "Iz poslednjih 5 zapisa izaberi svoja 3 glavna sanovna znaka i spoji ih sa 2 RC metode. Stavi mali podsetnik pored kreveta. Sutra uradi RC kad god se znak (ili sličan analog) pojavi u budnom životu."
+},
+"ld-04-reality-checks": {
+  "title": "Reality Check — pametno, ne često",
+  "summary": "RC koristi kao ciljane okidače vezane za sanovne znakove — ne kao nasumičnu naviku.",
+  "content": [
+    "## Šta čini RC delotvornim",
+    "- RC je **pitanje + test + stav**.",
+    "- Nakratko **posumnjaj u realnost** i iskreno se zapitaj: \"Da li upravo sanjam?\"",
+    "- Najbolje radi kada je **vezan za sanovni znak** ili jasnu neobičnost.",
+    "Cilj: Radi RC samo na okidač (≈2–6 puta dnevno), nikada mehanički.",
+    "## Pouzdane RC metode",
+    "- Pročitaj red teksta dva puta (da li se promenio?).",
+    "- Prst kroz suprotni dlan.",
+    "- Uštini nos i pokušaj da dišeš.",
+    "- Proveri sat/digitalni ekran dva puta.",
+    "- Svetlo prekidač: može biti nepouzdan — koristi sa oprezom.",
+    "## Kako izvesti jedan RC",
+    "- Zastani i iskreno pitaj: \"Mogu li sada sanjati?\"",
+    "- Uradi test **sporo**, sa očekivanjem da će realnost “pasti”.",
+    "- Pregledaj i druge anomalije (tekst, ruke, gravitacija, telefon).",
+    "Vežba: Izaberi **2 RC metode** i svaku veži za **po jedan sanovni znak**. Uvežbaj: zamisli znak → seti se → uradi RC.",
+    "Napomena: “Spamovanje” RC-ova svakih par minuta stvara **bezumnu** radnju — efikasnost opada.",
+    "## Česte greške",
+    "- Mehanični RC bez radoznalosti.",
+    "- Godinama koristiš samo jednu metodu (kombinuj 2+).",
+    "- Preskakanje RC-a posle jakih emocija (strah/uzbuđenje) — upravo su to glavni okidači."
+  ],
+  "tonight": "Odluči se za 2 RC metode i znak na koji su vezane. Uvežbaj ih jednom pre spavanja. Sutra radi RC **samo** kad se pojavi okidač (ili sličan analog) i zabeleži svaki RC u dnevniku uz vreme/kontekst."
+},
+"ld-05-breathing-suggestion": {
+  "title": "Spavanje i pažnja — lagani fokus na disanje",
+  "summary": "Kratka vežba disanja smanjuje mentalnu buku i jača nameru pre sna.",
+  "content": [
+    "## Zašto fokus na disanje",
+    "- Blaga svesnost daha spušta pobuđenost i olakšava uspavljivanje.",
+    "- Kratka rutina dodatno jača nameru pre sna.",
+    "Cilj: U krevet odeš smiren/a, prisutan/na i otvoren/a za kasni REM.",
+    "Vežba: 5-minutna rutina pre spavanja. Sedi ili legni, opusti vilicu i ramena, diši na nos ako ti prija.",
+    "## Tok od 5 minuta",
+    "- 1 min: Produži izdah (udah ~4, izdah ~6–8).",
+    "- 3 min: „Box“ disanje — udah 4, zadrži 4, izdah 4, zadrži 4 (skladi prema osećaju).",
+    "- 1 min: Prirodan dah + tiha namera: \"Setiću se da sanjam.\"",
+    "Napomena: Ako osetiš vrtoglavicu, vrati se na lagan prirodan dah i skrati zadržavanja.",
+    "## Opcioni audio",
+    "- Samo tiho; slušalice po želji.",
+    "- Može 10–15 min relaks traka pre spavanja ili u WBTB pauzi.",
+    "- Oči zatvorene; misli pusti da prolaze bez hvatanja."
+  ],
+  "tonight": "Uradi 5-minutnu rutinu i (opciono) pusti \"Alpha Relax 10m\" tiho. Na kraju jednom izgovori u sebi: \"Setiću se da sanjam\" i zaspi. Po buđenju upiši 3 rečenice u dnevnik."
+},
+"ld-06-mild": {
+  "title": "MILD — Mnemonijska indukcija lucidnih snova",
+  "summary": "Postavi jasnu nameru i uvežbaj trenutak prepoznavanja sna. Najbolje posle buđenja ili WBTB-a.",
+  "content": [
+    "## Ideja MILD-a",
+    "- Trening prospektivnog pamćenja: setiš se da se setiš **u snu**.",
+    "- Veži nameru za verovatan okidač (sanovni znak ili neobičnost).",
+    "- Vizualizuj trenutak kada prepoznaš znak i postaneš lucidan/na.",
+    "Cilj: Jedna jasna namera + jedan kratki krug vizualizacije svake noći, 3 noći zaredom.",
+    "## Rečenica (namera)",
+    "- Odaberi formulaciju koja ti \"leži\": \"Sledeći put kad sanjam, prepoznaću da sanjam.\"",
+    "- Ponavljaj je polako 3–5 puta, sa značenjem (ne mehanički).",
+    "- Zamisli da je izgovaraš *u* snu dok primećuješ znak.",
+    "## Uvežbavanje (slikovito)",
+    "- Preigraj skorošnji fragment sna ili tipičnu scenu.",
+    "- Vidi znak → oseti \"klik\" prepoznavanja → uradi blag RC → stabilizuj san.",
+    "- Uradi 3–5 ciklusa, jednostavno i mirno.",
+    "## Kada raditi MILD",
+    "- Pred spavanje, posle kratkih buđenja i posebno nakon WBTB pauze.",
+    "- Telo opušteno (vidi L5 disanje); bez naprezanja i frustracije.",
+    "## Saveti kvaliteta",
+    "- Dodaj trunku emocije (radoznalost, radost).",
+    "- Neka slike budu konkretne (ruke, sat, dvostruko čitanje).",
+    "- Ako večeras nema sećanja na san, uvežbaj generičnu scenu koju često posećuješ.",
+    "Vežba: Večeras formuliši svoju rečenicu i uradi 3–5 MILD krugova (rečenica + vizualizacija + blag RC). Zapiši sutra koliko si bio/la fokusiran/a.",
+    "Napomena: Kratko i iskreno je bolje nego dugo i forsirano. Ako um odluta, nežno se vrati i nastavi."
+  ],
+  "tonight": "Pre spavanja (i posle svakog buđenja) ponovi nameru 3–5 puta i uradi 3–5 ciklusa vizualizacije: primeti znak, shvati da sanjaš, uradi blag RC i stabilizuj. Ujutru zapiši 1–2 reda o tome kako je prošlo."
+},
+"ld-07-wbtb": {
+  "title": "WBTB — pametno buđenje i povratak u krevet",
+  "summary": "Povećaj verovatnoću lucidnosti hvatajući kasni REM posle kratke, svesne pauze.",
+  "content": [
+    "## Zašto WBTB",
+    "- Gađa kasni REM, kada je lucidnost najizglednija.",
+    "- Kratka budna pauza pojačava metakogniciju bez potpunog razbuđivanja.",
+    "Cilj: Probaj WBTB 2 od naredne 3 noći, rutina neka bude jednostavna.",
+    "## Tajming",
+    "- Podesi alarm 30–90 minuta pre uobičajenog buđenja ili ciljaj ~4.5–6 sati nakon uspavljivanja.",
+    "- Izaberi prozor koji možeš da ponavljaš — kontinuitet je važniji od savršenog tajminga.",
+    "## Budnost od 10 minuta",
+    "- Samo prigušeno svetlo; izbegni skrolovanje telefona.",
+    "- Toalet, mali gutljaj vode, pročitaj 2–3 reda iz dnevnika.",
+    "- Podseti se svojih sanovnih znakova i namere.",
+    "## Povratak u krevet uz MILD",
+    "- Udobno legni; ponovi nameru 3–5 puta.",
+    "- Vizualizuj prepoznavanje znaka → blag RC → stabilizacija.",
+    "Vežba: Zapiši tačno vreme alarma i 10-min čeklistu na papiru pored kreveta.",
+    "Napomena: Ako se previše razbudiš, skrati na ~5 minuta; ako si trom/a, ustani 30–60 sekundi i diši mirno."
+  ],
+  "tonight": "Podesi alarm za kasni REM prozor (oko 30–90 min pre uobičajenog buđenja). Tokom kratke budnosti: prigušeno svetlo, pregled znakova, pa MILD u krevetu. Ujutru zabeleži da li si bio/la previše budan/na ili pospan/a."
+},
+"ld-08-wild": {
+  "title": "WILD — lagani uvod (iz budnosti)",
+  "summary": "Blaga, bezbedna WILD varijanta: opusti se, posmatraj hipnagogiju i uđi u san bez forsiranja.",
+  "content": [
+    "## Šta je WILD (lagana verzija)",
+    "- Prelaz iz budnosti u san uz očuvanu svesnost.",
+    "- Posmatraš hipnagogiju (slike, zvuci, telesni osećaji) i puštaš da se san formira.",
+    "- Bez jurenja i forsiranja — komfor je prioritet.",
+    "Cilj: Uočiti hipnagogiju i pokušati jedan blag prelaz u san.",
+    "## Priprema i položaj",
+    "- Najbolje posle WBTB; ne pokušavaj na početku noći.",
+    "- Lezi na leđa ili udobnu stranu; vilica opuštena, jezik spušten.",
+    "- Ruke mirno; oči nepomične ispod kapaka; normalno gutanje.",
+    "- Svrab i mikro-pokreti su u redu — namesti se jednom pa se smiri.",
+    "## Tok od 10–15 minuta",
+    "- 1–2 min: Produži izdah (udah ~4, izdah ~6–8).",
+    "- 5–8 min: Prirodno disanje uz posmatranje hipnagogije (svetluca, oblici, fragmenti).",
+    "- Ako se scena formira: zamisli da radiš blag RC (dvostruko čitanje / prst kroz dlan) **u** sceni, pa stabilizuj.",
+    "- Ako se ništa ne formira: pusti da dođe običan san; pokušaj drugi put.",
+    "Napomena: Paraliza sna je bezopasna. Diši mirno; pomrdaj prste na rukama/nogama da izađeš. Ako neprijatnost traje, otvori oči i okreni se na stranu.",
+    "## Opciona pomoć",
+    "- Tiha fokus traka (npr. \"focus_pre_wild_12m\").",
+    "- Maska za oči i blage čepiće ako je prostor svetao/bučan.",
+    "Vežba: Posle WBTB-a, uradi tok od 10–15 min jednom. Zabeleži osećaje (trnci, lebdenje, slike, zvuci) i da li se pojavila scena."
+  ],
+  "tonight": "Isplaniraj WBTB prozor. Tokom kratke budnosti drži prigušeno svetlo. U krevetu isprati tok od 10–15 min i po želji pusti \"focus_pre_wild_12m\" tiho. Ako se pojavi scena, uradi blag RC u njoj; ako ne, samo zaspi i ujutru upiši u dnevnik."
+},
+"ld-09-audio-relax": {
+  "title": "Binauralni tonovi i muzika za relaks",
+  "summary": "Audio kao blag oslonac — pomaže fokusu i smirenju; ne garantuje lucidnost.",
+  "content": [
+    "## Šta audio može (a šta ne)",
+    "- Smanjuje pobuđenost, pomaže fokus, maskira sitne zvuke.",
+    "- Sam po sebi ne izaziva lucidno sanjanje.",
+    "- Reakcija je individualna — očekivanja neka budu blaga.",
+    "Cilj: Nađi minimalnu audio rutinu koja podržava praksu bez zavisnosti.",
+    "## Bezbedna upotreba",
+    "- Drži jačinu nisko — trebalo bi i dalje da čuješ zvuke u sobi.",
+    "- Slušalice su opciono; udobne bubice ili tihi zvučnik su u redu.",
+    "- Nikada ne koristi u vožnji ili tokom zadataka; sedi/lez bezbedno.",
+    "Napomena: Ako se javi nelagodnost (vrtoglavica, iritacija), prekini i pređi na tišinu.",
+    "## Kada puštati",
+    "- 10–15 min pre spavanja (odlično se uklapa sa L5 disanjem).",
+    "- Tokom WBTB pauze 5–10 min, zatim MILD/WILD.",
+    "- Ako te kasnije probudi, biraj kraću traku ili još tiši nivo.",
+    "## Izbor traka",
+    "- Kreni sa \"Alpha Relax 10m\" ili \"Alpha Relax 15m\".",
+    "- Biraj stabilan, bezvokalan ambijent; izbegavaj nagle crescende.",
+    "- Drži jednu omiljenu traku da stvori mirnu asocijaciju.",
+    "Vežba: Izaberi jednu traku i testiraj jačinu — pusti oko 2 minuta i šapni rečenicu; ako se ne čuje jasno, preglasno je. Večeras koristi 10–15 min i zabeleži nivo smirenosti 1–5."
+  ],
+  "tonight": "Pusti izabranu traku tiho 10–15 minuta (ili 5–10 u WBTB), zatim nastavi sa namerom/MILD-om. Ujutru zapiši da li je audio pomogao fokusu i eventualne nuspojave."
+},
+"ld-10-night-plan": {
+  "title": "Plan za noć — kombinuje RC + MILD + WBTB",
+  "summary": "Napravi jednostavnu rutinu za 3 noći koju možeš stvarno da ispratiš.",
+  "content": [
+    "## Tvoj mikro-plan za 3 noći",
+    "- Noć 1: L5 disanje → namera (MILD) → RC samo na dnevne analoge znakova → dnevnik po buđenju.",
+    "- Noć 2: Dodaj kratki WBTB (10 min): prigušeno svetlo, pregled znakova, MILD, nazad u krevet.",
+    "- Noć 3: Prilagodi po rezultatu (kraći/duži WBTB, drugačiji RC okidač).",
+    "Cilj: Ponavljiva čeklista koja se pročita za manje od 60 sekundi.",
+    "Vežba: Napiši mini čeklistu na papiru ili u aplikaciji i drži je pored kreveta.",
+    "Napomena: Drži lagano. Ako te WBTB previše razbudi, skrati; ako si trom/a, nakratko stani i diši polako.",
+    "## Primer čekliste",
+    "- Planirano vreme spavanja i (po potrebi) alarm za WBTB.",
+    "- L5: 5 minuta disanja.",
+    "- MILD: rečenica 3–5× + kratka vizualizacija.",
+    "- RC okidači: radi RC samo na analog dnevnih znakova.",
+    "- Dnevnik spreman: po buđenju 3 rečenice.",
+    "- Opciono: relaks traka 10–15 min (tiho).",
+    "## Praćenje",
+    "- Svako jutro: sećanje (0–3), broj urađenih RC-ova, WBTB (da/ne, minuta), fokus (1–5).",
+    "- Menjaj po noći samo jednu varijablu (ne pet)."
+  ],
+  "tonight": "Napiši svoju čeklistu (spavanje, opcioni WBTB alarm, MILD rečenica, RC okidači, dnevnik spreman, opcioni audio). Uradi L5 disanje, zatim MILD. Ujutru zabeleži sećanje (0–3) i RC-ove koje si uradio/la."
+},
+"ld-11-first-actions": {
+  "title": "Ulazak u lucidnost — šta odmah uraditi",
+  "summary": "Spreči prerano buđenje i usidri scenu u prvih 10–20 sekundi.",
+  "content": [
+    "## Prvih 10–20 sekundi",
+    "- Ostani miran/na; prihvati delimičnu jasnoću na početku.",
+    "- Pokreti neka budu mali i namerni.",
+    "- Ne razmišljaj o telu u krevetu.",
+    "Cilj: Stabilizuj čula i pažnju pre bilo kakve kontrole.",
+    "## Mikro-stabilizacioni protokol",
+    "- Pogledaj **dlan** iz blizine; uoči linije i sitne detalje.",
+    "- **Trljaj dlanove** jedno o drugo; oseti toplotu i trenje.",
+    "- **Dodirni** obližnje teksture (zid, tkanina, pod).",
+    "- **Opiši** naglas 3 stvari *u snu* (boje, oblike, zvuke).",
+    "- Uradi **spor izdah**; zatim **blagi RC** da potvrdiš lucidnost.",
+    "- Ako scena tamni: **okreni se** jednom u mestu i vrati fokus na ruke.",
+    "## Upravljanje uzbuđenjem i strahom",
+    "- Spusti pogled; smiri dah; blagi osmeh.",
+    "- Reci: \"Stabilizuj se\" / \"Više jasnoće\".",
+    "- Ako se pojavi element noćne more, **uđi u dijalog**: \"Ko si? Šta ti treba?\"",
+    "## Mikro-cilj posle stabilizacije",
+    "- Izaberi jednu sitnu radnju: korak napred, otvori vrata u drugu prostoriju ili reci \"Jasnoća\" i osmotri oko sebe.",
+    "- Veće ciljeve sačuvaj za kasnije snove.",
+    "Vežba: Dok si budan/na, jednom uvežbaj protokol: dlan → trljanje → dodir → opiši 3 stvari → spor izdah → blag RC.",
+    "Napomena: Ne bulji dugo u jednu tačku; pažnju lagano šetaj preko čula."
+  ],
+  "tonight": "Ako postaneš lucidan/na, odradi protokol (dlan → trljanje → dodir → opis → izdah → blag RC), pa uradi jednu sitnu radnju (npr. otvori vrata). Ujutru proceni trajanje lucidnosti i šta te je najbolje stabilizovalo."
+},
+"ld-12-stabilization": {
+  "title": "Stabilizacija i produbljivanje",
+  "summary": "Spreči bledenje sna: usidri scenu, obogati čula i produži trajanje.",
+  "content": [
+    "## Znaci nestabilnosti",
+    "- Zamućenje/potamnjivanje slike ili iznenadni mrak.",
+    "- „Gumeno“ telo, lebdenje ili gubitak detalja.",
+    "- Odlutavanje scene ili nagli povratak u krevet.",
+    "Cilj: Zadrži lucidnost 20–60 sekundi pre pokušaja kontrole.",
+    "## Osnovne tehnike produbljivanja",
+    "- **Ruke:** gledaj dlanove izbliza; isprati sitne linije.",
+    "- **Trenje:** trljaj dlanove dok ne osetiš toplotu i teksturu.",
+    "- **Dodir:** pređi prstima preko zida/tkanine/poda.",
+    "- **Opis:** naglas imenuj 3 stvari (boja/oblik/zvuk).",
+    "- **Okret:** jedno sporo okretanje; odmah vrati fokus na ruke.",
+    "- **Uzemljenje:** klekni/dotakni pod; oseti težinu i temperaturu.",
+    "- **Dah:** jedan dugi izdah da spustiš uzbuđenje.",
+    "Napomena: Koristi **jednu** alatku odjednom; preterana korekcija može „izbaciti“ san.",
+    "## Kada scena bledi",
+    "- Reci: \"Jasnoća\" / \"Stabilizuj se\".",
+    "- Okret + dodir površine čim staneš.",
+    "- Otvori vrata/zavesu i zakorači u novu, svetliju scenu.",
+    "- Ako moraš da zažmuriš: kraće od 1s, pa otvori oči u dlanove.",
+    "## Upravljaње pažnjom",
+    "- Izbegni tunelski pogled; lagano menjaj fokus između čula.",
+    "- Mikro-ciljevi: male radnje koje te zadržavaju u sceni.",
+    "- Ne razmišljaj o stvarnom telu ili krevetu.",
+    "Vežba: Suvi prolaz od 30 sekundi dok si budan/na: ruke → trljanje → dodir → opis → okret → ruke.",
+    "Napomena: Ako se javi strah, smiri dah i drži dlan na površini dok mirno govoriš."
+  ],
+  "tonight": "Ako postaneš lucidan/na, stabilizuj ~30 sekundi koristeći ruke → trljanje → dodir → opis. Ako krene tamnjenje, reci \"Jasnoća\", okreni se jednom i vrati fokus na dlanove. Ujutru zapiši koja tehnika je najbolje radila."
+},
+"ld-13-gentle-control": {
+  "title": "Blaga kontrola sna — mikro-ciljevi",
+  "summary": "Vežbaj male radnje koje čuvaju stabilnost sna i daju osećaj upravljanja.",
+  "content": [
+    "## Zašto krenuti malim koracima",
+    "- „Velike moći“ često destabilizuju scenu (brzo letenje, prizivanje, teleport).",
+    "- Blaga kontrola gradi senzorimotornu mapu unutar sna.",
+    "Cilj: Izaberi jedan mikro-cilj i pokušaj ga tek posle stabilizacije.",
+    "## Meni mikro-ciljeva",
+    "- Blagi skok i oseti gravitaciju pod stopalima.",
+    "- Otvori vrata i očekuj mirnu, susednu prostoriju.",
+    "- Mrdni osvetljenost ili boju malog objekta trljanjem dlanova i rečenicom „svetlije“ ili „toplije“. ",
+    "- „Džep trik“: očekuj mali predmet (novčić, ključ) u džepu ili iza leđa, pa ga otkrij.",
+    "- Postavi liku iz sna neutralno pitanje (\"Šta je ovo mesto?\").",
+    "- Istraži ukus/teksturu: zagrizi voće i opiši ukus i osećaj.",
+    "## Kako pokušati",
+    "- Prvo stabilizacija: ruke → trljanje → dodir → opis.",
+    "- Formuliši jasnu rečenicu: „Sada ću <radnja>.\" Uključi jedno čulo (dodir/vid/glas).",
+    "- Kreći se polako uz mekan dah; drži pažnju široko (bez tunelskog pogleda).",
+    "- Ako scena „zadrhti“, pauziraj → ruke ponovo → nastavi.",
+    "Vežba: Izaberi **jedan** mikro-cilj za sledeću lucidnu priliku i uradi suvi prolaz od 20 sekundi dok si budan/na.",
+    "Napomena: Izbegavaj ciljeve visokog pobuđenja (brzo letenje, ogledala, „praznina“) dok ne možeš da držiš >60 s stabilne lucidnosti.",
+    "## Rešavanje problema",
+    "- Telo „ukočeno“: kreni mikro-pokretom prsta ili sitnim korakom, pa povećaj.",
+    "- Nagli povratak u krevet: okreni se jednom i vrati fokus na dlanove uz dodir površine.",
+    "- Prizivanje ne uspeva: skreni pogled, očekuj predmet iza sebe, zatim se okreni i uzmi ga."
+  ],
+  "tonight": "Odluči se za jedan mikro-cilj (npr. otvori vrata u novu prostoriju). Uvežbaj ga jednom pre spavanja posle stabilizacije. U sledećem lucidnom trenutku prvo stabilizuj, pa pokušaj mikro-cilj; ujutru zapiši ishod."
+},
+"ld-14-nightmares-ethics": {
+  "title": "Noćne more i etika lucidnosti",
+  "summary": "Preokreni pretnju u dijalog; čuvaj granice i igraj bezbedno.",
+  "content": [
+    "## Preokviravanje noćnih mora",
+    "- Noćna mora često signalizira visoku pobuđenost i neobrađenu emociju.",
+    "- Lucidnost ti daje opcije: posmatraj, uđi u dijalog, transformiši ili se bezbedno povuci.",
+    "Cilj: Odgovori radoznalo, umesto refleksnog bega ili borbe.",
+    "## Alati unutar sna",
+    "- Prvo stabilizacija: pogled u dlan → trljanje ruku → spor izdah → blag RC.",
+    "- Reci: \"Bezbedno je; ovo je san.\"",
+    "- Dijalog: pitaj figuru, \"Ko si? Šta želiš da mi pokažeš?\"",
+    "- Transformacija: zamisli toplo svetlo oko sebe ili ponudi mali simboličan poklon.",
+    "- Saveznik: pozovi pouzdan lik (prijatelj/mentor/životinja) da stane uz tebe.",
+    "- Granice: stvori providan štit ili zakorači iza vrata, pa se vrati mirno.",
+    "- Kontrola razmere: uspori vreme, stišaj zvuk ili se udalji za jedan korak.",
+    "- Bezbedan izlaz: ako je previše, zatvori oči <1 s, oseti krevet, mrdni prste na rukama/nogama, diši i probudi se.",
+    "Napomena: Ne moraš ništa „pobediti“; razumevanje i bezbednost su prvi.",
+    "## Etika — jednostavna pravila",
+    "- Budi ljubazan/na prema likovima sna — bilo da su delovi psihe ili autonomni, poštuj ih.",
+    "- Saglasnost je važna: izbegavaj prisilu; preskoči štetne ili ponižavajuće scenarije.",
+    "- Ostani u skladu sa svojim vrednostima; biraj niskorizične, neštetne eksperimente.",
+    "- U početku daj prednost mirnom istraživanju nad visokim intenzitetom.",
+    "## Nakon sna — integracija",
+    "- Po buđenju napiši 3 reda: šta se desilo, kako si se osećao/la, šta je pomoglo.",
+    "- Uzemljenje: voda, istezanje, pogled kroz prozor u prirodno svetlo.",
+    "- Ako učestale, uznemirujuće more remete san ili dnevno funkcionisanje, razmisli o razgovoru sa stručnim licem.",
+    "Vežba: Napiši „plan za noćnu moru“: dve smirujuće rečenice (npr. „Bezbedno je“ + „Mogu da pitam pitanja“) i jedna bezbedna akcija (pozovi saveznika, otvori vrata ka svetlu ili načini korak unazad uz disanje)."
+  ],
+  "tonight": "Pripremi svoj plan za noćnu moru na malom papiru pored kreveta. Postavi nameru da odgovaraš radoznalo. Ako se javi noćna mora, prvo stabilizuj, izgovori smirujuću rečenicu, probaj dijalog ili pozovi saveznika; ako je previše, bezbedno izađi i ujutru zapiši."
+},
+"ld-15-troubleshooting": {
+  "title": "Troubleshooting i revizija napretka",
+  "summary": "Reši česte blokade (sećanje, prerano buđenje, bez okidača, WBTB problemi) i iteriraj sa jednom promenom nedeljno.",
+  "content": [
+    "## Brza dijagnostika",
+    "- Nema sećanja 3 noći → vrati se na L2 (Dnevnik) + L5 (disanje); zapiši „Bez sećanja“ + jedan telesni osećaj.",
+    "- Buđenje odmah posle lucidnosti → uradi L11–L12 stabilizaciju ranije; pokreti mali; spusti pobuđenost.",
+    "- RC nikad ne „pada“ → vezuj RC samo za **dnevne analoge** svojih sanovnih znakova; 2–6 svesnih RC-a dnevno, bez spama.",
+    "- WBTB previše razbudi → skrati na ~5 min, bez telefona, bez audio; previše pospano → ustani 30–60 s, dah 4–6, pa MILD.",
+    "- WILD izaziva nelagodu/paralizu → tretiraj kao bezopasno; mirno izađi; za sada prednost MILD-u.",
+    "- Audio ometa → još tiše ili pauza; drži se jedne stabilne trake.",
+    "- Česte uznemirujuće more → koristi L14 plan; ako traje, razmisli o stručnom savetu.",
+    "Cilj: Napravi **jednostrani iterativni plan** i menjaj samo **jednu** varijablu narednih 7 noći.",
+    "## Pregled metrika (svakog jutra)",
+    "- Sećanje 0–3 (0 ništa, 1 fragment, 2 delimično, 3 puno).",
+    "- RC urađeni (broj) i da li su bili na okidač.",
+    "- MILD ciklusi (broj) i fokus 1–5.",
+    "- WBTB (da/ne, minuta).",
+    "- Lucidno? (da/ne), procenjeno trajanje, stabilnost 1–5.",
+    "## Nedeljna iteracija",
+    "- Izaberi jedan „uskog grla“ sa liste dijagnostike.",
+    "- Odluči jednu korekciju (npr. kraći WBTB, drugi RC okidač, ranija stabilizacija).",
+    "- Primeni 7 noći; ostalo drži isto.",
+    "- Pregledaj metrike; odluči: zadržati, vratiti ili probati novu **jednu** izmenu.",
+    "## Šablon na 1 stranu",
+    "- Vreme spavanja i buđenja (približno).",
+    "- RC okidači (tačne situacije/konteksti).",
+    "- MILD rečenica (finalna formulacija).",
+    "- WBTB plan (ako koristiš): vreme alarma + čeklista za 5–10 min.",
+    "- Sekvenca stabilizacije: dlan → trljanje → dodir → opis → dah.",
+    "- Opciono audio: traka + beleška o jačini.",
+    "- Ove nedelje menjam samo: ______.",
+    "Vežba: Popuni plan na jednu stranu i obaveži se na **jednu** promenu za narednih 7 noći.",
+    "Napomena: Blagost ispred pritiska. Kontinuitet pobeđuje intenzitet; sitni, pouzdani koraci dobijaju trku."
+  ],
+  "tonight": "Napiši svoj jednostrani plan i izaberi jednu promenu za ovu nedelju. Večeras: L5 disanje → MILD (3–5×) → RC samo na okidače → ujutru 3 rečenice u dnevnik → upiši metrike (sećanje 0–3, RC broj, fokus 1–5)."
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+}
+
+
+
+ 
+
+

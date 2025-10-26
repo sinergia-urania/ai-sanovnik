@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "111298236475",
+    "project_id": "dreamcodex-ai",
+    "storage_bucket": "dreamcodex-ai.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111298236475:android:f6cdc963a12963adc24c1e",
+        "android_client_info": {
+          "package_name": "com.mare82.aisanovnik"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh9uz1Xuji-wt1l48SNpyuD3cAWBkVR34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

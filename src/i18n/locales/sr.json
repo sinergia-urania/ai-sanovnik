@@ -7,43 +7,307 @@
     "plans": "Pristup / Planovi"
   },
   "interpretation": {
-    "enterDream": "Unesite san pre izbora metode.",
-    "chosen": "Izabrana metoda",
+    "enterDream": "Prvo unesite svoj san.",
+    "chosen": "Izabrani metod",
     "dream": "Vaš san",
-    "dreamPH": "Opišite san...",
-    "feelings": "Kako ste se osećali po buđenju?",
-    "feelingsPH": "npr. mirno, anksiozno, puno nade...",
+    "dreamPH": "Ovde upišite svoj san...",
+    "feelings": "Kako ste se osećali posle buđenja?",
+    "feelingsPH": "npr. mirno, anksiozno, s nadom...",
     "events": "Skorašnji važni događaji",
     "eventsPH": "Posao, odnosi, zdravlje, putovanja...",
-    "scientific": "Naučna (Jung/Frojd/Szondi)",
-    "traditional": "Tradicionalna (Sanovnik)"
+    "scientific": "Naučno (Jung/Frojd/Sondi)",
+    "traditional": "Tradicionalno (Sanovnik)",
+    "scientificShort": "Naučno",
+    "traditionalShort": "Tradicionalno tumačenje",
+    "adNoticePreAnswer": "Kratka reklama može da se pojavi pre odgovora."
   },
   "journal": {
     "newEntry": "Novi unos",
     "edit": "Uredi unos",
     "untitled": "Bez naslova",
-    "empty": "Još uvek nema unosa.",
+    "empty": "Još nema unosa.",
     "titlePH": "Naslov",
-    "contentPH": "Upišite san...",
-    "sendToInterpretation": "Pošalji na tumačenje"
+    "contentPH": "Zapišite svoj san...",
+    "sendToInterpretation": "Pošalji na tumačenje",
+    "saveToJournal": "Sačuvaj u dnevnik",
+    "openJournal": "Otvori dnevnik",
+    "contentRequired": "Unesi sadržaj sna.",
+    "details": "San",
+    "lockedBody": "Dnevnik je dostupan od Premium plana.",
+    "filter": {
+      "all": "Svi",
+      "notes": "Samo zapisi",
+      "interpreted": "Protumačeni"
+    }
   },
   "lucid": {
-    "tapToOpen": "Dodirnite za otvaranje",
+    "tapToOpen": "Tapnite da otvorite",
     "lesson": "Lekcija",
-    "lessonBody": "TODO: Sadržaj lekcije biće učitan sa backend-a."
+    "lessonBody": "TODO: Sadržaj lekcije će biti učitan sa back-enda.",
+    "lockedBody": "Trening lucidnog je dostupan na PRO planu."
   },
   "media": {
-    "header": "Muzika za relaks i binauralni tonovi"
+    "header": "Relax muzika i binauralni tonovi",
+    "tapToPlay": "Tapni da pustiš",
+    "lockedBody": "Multimedija je dostupna na PRO planu.",
+    "sections": {
+      "binaural": "Binauralni",
+      "shortRelax": "Kratak odmor (≤15 min)",
+      "longRelax": "Dugi odmor i meditacija"
+    },
+    "controls": {
+      "play": "Pusti",
+      "pause": "Pauziraj",
+      "stop": "Zaustavi"
+    },
+    "badge": {
+      "playing": "Pušta se"
+    }
   },
   "plans": {
     "header": "Pristup i cene",
-    "freeLimits": "Osnovna tumačenja, dnevnik i pregled multimedije.",
+    "freeLimits": "Osnovna ograničenja tumačenja, pregled dnevnika i medija.",
     "premiumLimits": "Puna tumačenja, napredne lekcije i cela medija biblioteka.",
     "freePrice": "0 €/mes",
     "premiumPrice": "€ /mes (TBD)"
   },
+  "result": {
+    "interpretation": "Tumačenje",
+    "tryTraditional": "Probaj tradicionalni metod",
+    "tryScientific": "Probaj naučni metod",
+    "useOneInterpretationTitle": "Iskoristiti 1 tumačenje?",
+    "useOneInterpretationBody": "Pokušaj drugim metodom potrošiće 1 tumačenje.",
+    "waiting": "Čeka se odgovor…",
+    "summary": "Sažetak",
+    "keySymbols": "Ključni simboli",
+    "meanings": "Moguća značenja",
+    "advice": "Blag savet",
+    "method": "Metod",
+    "rationale": "Zašto ovaj metod",
+    "methods": {
+      "jung": "Jung",
+      "freud": "Frojd",
+      "szondi": "Sondi"
+    }
+  },
+  "billing": {
+    "notEnoughTokensTitle": "Nema preostalih tumačenja",
+    "notEnoughTokensBody": "Nadogradite plan ili dopunite saldo da biste probali drugi metod."
+  },
+  "stt": {
+    "speak": "Govori",
+    "listening": "Slušam…",
+    "start": "Pokreni snimanje",
+    "stop": "Zaustavi"
+  },
   "common": {
     "save": "Sačuvaj",
-    "delete": "Obriši"
+    "delete": "Obriši",
+    "home": "Početna",
+    "answer": "Odgovor",
+    "cancel": "Otkaži",
+    "continue": "Nastavi",
+    "upgrade": "Nadogradi",
+    "saved": "Sačuvano",
+    "deleted": "Obrisano",
+    "unknown": "Nepoznato",
+    "ok": "U redu",
+    "promo": {
+      "title": "Probaj našu novu aplikaciju",
+      "cta": "Una Astro-Tarot AI"
+    },
+    "membership": {
+      "title": "Planovi i pretplate",
+      "packages": {
+        "free": "Free",
+        "premium": "Premium",
+        "pro": "PRO"
+      },
+      "labels": {
+        "perMonth": "mesečno",
+        "currentPlan": "Plan:"
+      },
+      "features": {
+        "journal": "Dnevnik snova",
+        "lucid": "Trening lucidnog",
+        "media": "Multimedija",
+        "ads": "Reklame"
+      },
+      "values": {
+        "aiModel": "AI model: {{model}}",
+        "cap": "CAP banka: {{cap}}",
+        "noBank": "Banka: nema",
+        "model": "AI model: {{model}}",
+        "capWithBank": "CAP banka: {{cap}}",
+        "capNoBank": "Banka: nema"
+      },
+      "cta": {
+        "buyPremium": "Kupi Premium ({{price}} {{currency}}/mesec)",
+        "buyPro": "Kupi PRO ({{price}} {{currency}}/mesec)",
+        "free": "Ostani na Free",
+        "currentPlan": "Trenutni plan",
+        "downgradeNoCharge": "Prelazak bez naplate"
+      },
+      "notes": {
+        "cancelPolicy": "Otkazivanje prelazi na Free na datum obnove pretplate. CAP ograničava maksimum i nema propadanja salda.",
+        "upgradeRules": "Upgrade: Premium +30 odmah; Free→Pro +50, Premium→Pro +50. Downgrade Pro→Premium: saldo se seče na CAP 90. Free mesečni limit: 10."
+      },
+      "toast": {
+        "planChanged": "Plan je uspešno promenjen.",
+        "downgradeNoCharge": "Prelazak bez naplate. Nema instant bonusa."
+      },
+      "wallet": {
+        "line": "Novčanik: {{balance}}"
+      },
+      "proplus": {
+        "title": "ProPlus (godišnje)",
+        "desc": "600 tumačenja odmah + bez CAP-a, važi 12 meseci.",
+        "buyCta": "Kupi ProPlus ({{price}} {{currency}}/godišnje)",
+        "activeCta": "ProPlus je aktivan",
+        "activeLine": "ProPlus: {{remaining}} (ističe {{date}}) · Novčanik: {{balance}}",
+        "successTitle": "ProPlus aktiviran!",
+        "successBody": "600 je dodato i plan je zaključan do isteka.",
+        "lockTitle": "ProPlus je aktivan",
+        "lockBody": "Promena plana je onemogućena dok traje ProPlus.",
+        "best": "Najbolja ponuda"
+      },
+      "addons": {
+        "buyPack20": "Kupi dopunu +20 ({{price}} {{currency}})",
+        "blockedFreeTitle": "Nije dostupno na Free planu",
+        "blockedFreeBody": "Dopune nisu dostupne na Free planu.",
+        "limitReachedTitle": "Limit dostignut",
+        "limitReachedBody": "Ne možete dodati više kredita na ovom planu.",
+        "partialTitle": "Delimična dopuna",
+        "partialBody": "Zbog limita paketa može da se doda samo {{count}} od 20.",
+        "partialCta": "Dodaj {{count}}",
+        "okProPlus": "Dodato u ProPlus saldo!",
+        "okWallet": "Dopuna uspešna",
+        "nothing": "Nije dodato (limit dostignut)",
+        "added": "Dodato: {{added}}"
+      },
+      "cancel": {
+        "schedule": "Otkaži na kraju ciklusa",
+        "undo": "Poništi otkazivanje",
+        "scheduled": "Otkazivanje zakazano za kraj ciklusa.",
+        "reverted": "Otkazivanje uklonjeno.",
+        "scheduledAt": "Zakazan prelazak na FREE",
+        "confirmTitle": "Da li sigurno želiš da otkažeš?",
+        "confirmBody": "Prelazak na FREE biće na kraju tekućeg ciklusa.",
+        "confirmCta": "Otkaži",
+        "undoTitle": "Ukloniti otkazivanje?",
+        "undoBody": "Zadržaćeš trenutni plan i posle obnove.",
+        "undoCta": "Poništi"
+      }
+    },
+    "menu": {
+      "profile": "Profil",
+      "settings": "Podešavanja",
+      "about": "O aplikaciji",
+      "plans": "Planovi",
+      "support": "Oceni & Podeli",
+      "contact": "Kontakt"
+    },
+    "support": {
+      "title": "Podrška",
+      "rate": "Oceni aplikaciju",
+      "share": "Podeli sa prijateljima",
+      "shareMessage": "Preporučujem DreamCodex AI – tumačenje snova i lucidno sanjanje: "
+    },
+    "buttons": {
+      "close": "Zatvori",
+      "cancel": "Otkaži"
+    },
+    "settings": {
+      "title": "Podešavanja",
+      "mute": "Bez zvuka",
+      "volume": "Jačina zvuka",
+      "language": "Jezik",
+      "chooseLanguage": "Izaberi jezik",
+      "notifications": "Obaveštenja"
+    },
+    "legal": {
+      "title": "Pravna dokumenta",
+      "disclaimer": "Odricanje od odgovornosti",
+      "terms": "Uslovi korišćenja",
+      "privacy": "Politika privatnosti",
+      "dataDeletion": "Brisanje podataka"
+    },
+    "labels": {
+      "updatedAt": "Ažurirano",
+      "openOnWeb": "Otvori na vebu"
+    },
+    "app": {
+      "name": "DreamCodex AI"
+    },
+    "profile": {
+      "title": "Profil",
+      "displayName": "Ime za prikaz",
+      "displayNamePH": "npr. Mira",
+      "plan": "Plan",
+      "balance": "Saldo",
+      "allowance": "Mesečni top-up",
+      "cap": "CAP",
+      "started": "Ciklus od",
+      "nextTopup": "Sledeći top-up",
+      "managePlan": "Upravljaj planom",
+      "available": "Dostupno (ukupno)",
+      "proplus": "ProPlus saldo",
+      "proplusExpiry": "ProPlus ističe",
+      "wallet": "Novčanik",
+      "linkApple": "Poveži Apple nalog",
+      "appleLinked": "Apple nalog je povezan ✔",
+      "appleLinkedOk": "Apple nalog je povezan.",
+      "appleLinkedMissing": "Ne vidim povezan Apple nalog. Pokušaj ponovo.",
+      "signedInAs": "Prijavljen kao",
+      "signedOut": "Nisi prijavljen"
+    },
+    "messages": {
+      "successTitle": "Uspeh!",
+      "saved": "Sačuvano."
+    },
+    "errors": {
+      "genericTitle": "Greška",
+      "tryAgain": "Pokušajte ponovo.",
+      "notLoggedIn": "Niste ulogovani.",
+      "clientReqIdMissing": "Nedostaje ID klijentskog zahteva.",
+      "notFound": "Nije pronađeno."
+    },
+    "misc": {
+      "loading": "Učitavanje…",
+      "cancel": "Otkaži"
+    },
+    "login": "Prijava",
+    "logout": "Odjavi se",
+    "logoutConfirm": {
+      "title": "Odjavi se?",
+      "body": "Bićeš odjavljen sa ovog uređaja.",
+      "cta": "Odjavi me"
+    }
+  },
+  "login": {
+    "title": "Prijava",
+    "subtitle": "Prijavi se da nastaviš",
+    "emailPlaceholder": "vas@email.com",
+    "send": "Pošalji magic link",
+    "sending": "Slanje…",
+    "enterEmail": "Unesite vašu e-adresu.",
+    "checkInbox": "Proverite inbox — poslali smo link za prijavu.",
+    "error": "Nešto je pošlo naopako.",
+    "continueFacebook": "Nastavi sa Facebook",
+    "continueGoogle": "Nastavi sa Google",
+    "continueApple": "Nastavi uz Apple",
+    "magicTitle": "Ili se prijavi Magic linkom",
+    "emailPH": "vas@email.com",
+    "sendMagic": "Pošalji Magic link",
+    "hint": "Ako te ne vrati automatski, otvori link na ovom uređaju.",
+    "tryAgain": "Pokušaj ponovo.",
+    "oauthFailed": "OAuth tok nije uspeo."
+  },
+  "audio": {
+    "errors": {
+      "invalidMeta": "Neispravni metapodaci (nedostaje id).",
+      "unknownId": "Nepoznat ID medija: {{id}}",
+      "playback": "Greška pri reprodukciji."
+    }
   }
 }
