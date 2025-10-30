@@ -1,0 +1,313 @@
+{
+  "home": {
+    "interpret": "Rüya Yorumlama",
+    "journal": "Rüya Günlüğü",
+    "lucid": "Bilinçli Rüya Eğitimi",
+    "media": "Medya",
+    "plans": "Erişim / Planlar"
+  },
+  "interpretation": {
+    "enterDream": "Lütfen önce rüyanızı girin.",
+    "chosen": "Seçilen yöntem",
+    "dream": "Rüyanız",
+    "dreamPH": "Rüyanızı buraya yazın…",
+    "feelings": "Uyanınca nasıl hissettiniz?",
+    "feelingsPH": "örn. sakin, endişeli, umutlu…",
+    "events": "Son önemli olaylar",
+    "eventsPH": "İş, ilişkiler, sağlık, seyahat…",
+    "scientific": "Bilimsel (Jung/Freud/Szondi)",
+    "traditional": "Geleneksel (Rüya Tabiri)",
+    "scientificShort": "Bilimsel",
+    "traditionalShort": "Geleneksel",
+    "adNoticePreAnswer": "Yanıttan önce kısa bir reklam çıkabilir."
+  },
+  "journal": {
+    "details": "Rüya",
+    "newEntry": "Yeni kayıt",
+    "edit": "Kaydı düzenle",
+    "untitled": "Başlıksız",
+    "empty": "Henüz kayıt yok.",
+    "titlePH": "Başlık",
+    "contentPH": "Rüyanızı yazın…",
+    "sendToInterpretation": "Yoruma gönder",
+    "saveToJournal": "Günlüğe kaydet",
+    "openJournal": "Günlüğü aç",
+    "contentRequired": "Rüya içeriğini girin.",
+    "lockedBody": "Rüya Günlüğü Premium plandan itibaren kullanılabilir.",
+    "filter": {
+      "all": "Tümü",
+      "notes": "Yalnızca notlar",
+      "interpreted": "Yorumlandı"
+    }
+  },
+  "lucid": {
+    "tapToOpen": "Açmak için dokunun",
+    "lesson": "Ders",
+    "lessonBody": "TODO: Ders içeriği backend’den yüklenecek.",
+    "lockedBody": "Bilinçli rüya eğitimi PRO planda mevcuttur."
+  },
+  "media": {
+    "header": "Rahatlama müziği ve binaural tonlar",
+    "tapToPlay": "Çalmak için dokunun",
+    "lockedBody": "Medya PRO planda mevcuttur.",
+    "sections": {
+      "binaural": "Binaural",
+      "shortRelax": "Kısa rahatlama (≤15 dk)",
+      "longRelax": "Uzun rahatlama & meditasyon"
+    },
+    "controls": {
+      "play": "Çal",
+      "pause": "Duraklat",
+      "stop": "Durdur"
+    },
+    "badge": {
+      "playing": "Çalıyor"
+    }
+  },
+  "plans": {
+    "header": "Erişim & fiyatlandırma",
+    "freeLimits": "Temel yorum limitleri, günlük ve medya inceleme.",
+    "premiumLimits": "Tam yorumlar, ileri düzey dersler ve eksiksiz medya kütüphanesi.",
+    "freePrice": "0 €/ay",
+    "premiumPrice": "€/ay (belirlenecek)"
+  },
+  "result": {
+    "interpretation": "Yorum",
+    "tryTraditional": "Geleneksel yöntemi dene",
+    "tryScientific": "Bilimsel yöntemi dene",
+    "useOneInterpretationTitle": "1 yorum kullanılsın mı?",
+    "useOneInterpretationBody": "Başka bir yöntemi denemek 1 yorumu tüketecek.",
+    "waiting": "Yanıt bekleniyor…",
+    "summary": "Özet",
+    "keySymbols": "Ana semboller",
+    "meanings": "Olası anlamlar",
+    "advice": "Nazik öneri",
+    "method": "Yöntem",
+    "rationale": "Neden bu yöntem",
+    "methods": {
+      "jung": "Jung",
+      "freud": "Freud",
+      "szondi": "Szondi"
+    }
+  },
+  "billing": {
+    "notEnoughTokensTitle": "Yorum hakkı kalmadı",
+    "notEnoughTokensBody": "Başka bir yöntemi denemek için planınızı yükseltin veya bakiyenizi doldurun."
+  },
+  "stt": {
+    "start": "Kaydı başlat",
+    "stop": "Durdur",
+    "speak": "Konuşun",
+    "listening": "Dinleniyor…"
+  },
+  "common": {
+    "unknown": "Bilinmiyor",
+    "save": "Kaydet",
+    "delete": "Sil",
+    "home": "Ana sayfa",
+    "answer": "Yanıt",
+    "cancel": "İptal",
+    "continue": "Devam et",
+    "ok": "Tamam",
+    "upgrade": "Yükselt",
+    "saved": "Kaydedildi",
+    "deleted": "Silindi",
+    "promo": {
+      "title": "Yeni uygulamamızı deneyin",
+      "cta": "Una Astro-Tarot AI"
+    },
+    "membership": {
+      "title": "Planlar & Abonelikler",
+      "packages": {
+        "free": "Ücretsiz",
+        "premium": "Premium",
+        "pro": "PRO"
+      },
+      "labels": {
+        "perMonth": "aylık",
+        "currentPlan": "Plan:"
+      },
+      "features": {
+        "journal": "Rüya Günlüğü",
+        "lucid": "Bilinçli rüya eğitimi",
+        "media": "Medya",
+        "ads": "Reklamlar"
+      },
+      "values": {
+        "aiModel": "Yapay zeka modeli: {{model}}",
+        "cap": "CAP bankası: {{cap}}",
+        "noBank": "Banka: yok",
+        "model": "Yapay zeka modeli: {{model}}",
+        "capWithBank": "CAP bankası: {{cap}}",
+        "capNoBank": "Banka: yok"
+      },
+      "cta": {
+        "buyPremium": "Premium satın al ({{price}} {{currency}}/ay)",
+        "buyPro": "PRO satın al ({{price}} {{currency}}/ay)",
+        "free": "Ücretsiz kal",
+        "currentPlan": "Mevcut plan",
+        "downgradeNoCharge": "Ücret alınmadan düşür"
+      },
+      "notes": {
+        "cancelPolicy": "İptal, abonelik yenileme tarihinde Ücretsiz plana geçiş yapar. CAP üst sınırı belirler ve bakiye azalışı yoktur.",
+        "upgradeRules": "Yükseltme: Premium +30 hemen; Free→Pro +50, Premium→Pro +50. Düşürme Pro→Premium: bakiye CAP 90’a kesilir. Ücretsiz aylık limit: 10."
+      },
+      "toast": {
+        "planChanged": "Plan başarıyla değiştirildi.",
+        "downgradeNoCharge": "Ücret alınmadan düşürüldü. Anında bonus yok."
+      },
+      "wallet": {
+        "line": "Cüzdan: {{balance}}"
+      },
+      "proplus": {
+        "title": "ProPlus (yıllık)",
+        "desc": "600 yorum anında + CAP yok, 12 ay geçerli.",
+        "buyCta": "ProPlus satın al ({{price}} {{currency}}/yıl)",
+        "activeCta": "ProPlus etkin",
+        "activeLine": "ProPlus: {{remaining}} (bitiş {{date}}) · Cüzdan: {{balance}}",
+        "successTitle": "ProPlus etkinleştirildi!",
+        "successBody": "600 eklendi ve plan bitişe kadar kilitlendi.",
+        "lockTitle": "ProPlus etkin",
+        "lockBody": "ProPlus aktifteyken plan değişiklikleri devre dışıdır.",
+        "best": "En iyi teklif"
+      },
+      "addons": {
+        "buyPack20": "+20 yükleme satın al ({{price}} {{currency}})",
+        "blockedFreeTitle": "Ücretsiz planda kullanılamaz",
+        "blockedFreeBody": "Ücretsiz planda yükleme mevcut değil.",
+        "limitReachedTitle": "Sınıra ulaşıldı",
+        "limitReachedBody": "Bu planda daha fazla kredi ekleyemezsiniz.",
+        "partialTitle": "Kısmi yükleme",
+        "partialBody": "Paket sınırları nedeniyle, 20’den yalnızca {{count}} eklenebilir.",
+        "partialCta": "{{count}} ekle",
+        "okProPlus": "ProPlus bakiyesine eklendi!",
+        "okWallet": "Yükleme başarılı",
+        "nothing": "Hiçbir şey eklenmedi (sınırda)",
+        "added": "Eklendi: {{added}}"
+      },
+      "cancel": {
+        "schedule": "Dönem sonunda iptal et",
+        "undo": "İptali geri al",
+        "scheduled": "İptal, dönemin sonuna planlandı.",
+        "reverted": "İptal kaldırıldı.",
+        "scheduledAt": "FREE’ye geçiş planlandı",
+        "confirmTitle": "İptal etmek istediğinize emin misiniz?",
+        "confirmBody": "Mevcut fatura döneminin sonunda FREE’ye geçeceksiniz.",
+        "confirmCta": "Planı iptal et",
+        "undoTitle": "İptali kaldırmak istiyor musunuz?",
+        "undoBody": "Yenilemeden sonra mevcut planınızı koruyacaksınız.",
+        "undoCta": "Geri al"
+      }
+    },
+    "menu": {
+      "profile": "Profil",
+      "settings": "Ayarlar",
+      "about": "Hakkında",
+      "plans": "Planlar",
+      "support": "Puanla & Paylaş",
+      "contact": "İletişim"
+    },
+    "support": {
+      "title": "Destek",
+      "rate": "Uygulamayı değerlendir",
+      "share": "Arkadaşlarınla paylaş",
+      "shareMessage": "DreamCodex AI’yi öneriyorum — rüya yorumu ve bilinçli rüya: "
+    },
+    "buttons": {
+      "close": "Kapat",
+      "cancel": "İptal"
+    },
+    "settings": {
+      "title": "Ayarlar",
+      "mute": "Sessize al",
+      "volume": "Ses düzeyi",
+      "language": "Dil",
+      "chooseLanguage": "Dil seçin",
+      "notifications": "Bildirimler"
+    },
+    "legal": {
+      "title": "Hukuki",
+      "disclaimer": "Sorumluluk Reddi",
+      "terms": "Kullanım Şartları",
+      "privacy": "Gizlilik Politikası",
+      "dataDeletion": "Veri Silme"
+    },
+    "labels": {
+      "updatedAt": "Güncellendi",
+      "openOnWeb": "Web’de aç"
+    },
+    "app": {
+      "name": "DreamCodex AI"
+    },
+    "profile": {
+      "title": "Profil",
+      "displayName": "Görünen ad",
+      "displayNamePH": "örn. Mira",
+      "plan": "Plan",
+      "balance": "Bakiye",
+      "allowance": "Aylık ekleme",
+      "cap": "CAP",
+      "started": "Döngü başlangıcı",
+      "nextTopup": "Sonraki yükleme",
+      "managePlan": "Planı yönet",
+      "available": "Kullanılabilir (toplam)",
+      "proplus": "ProPlus bakiyesi",
+      "proplusExpiry": "ProPlus bitişi",
+      "wallet": "Cüzdan",
+      "linkApple": "Apple hesabını bağla",
+      "appleLinked": "Apple hesabı bağlı ✔",
+      "appleLinkedOk": "Apple hesabı bağlandı.",
+      "appleLinkedMissing": "Bağlı bir Apple hesabı göremiyorum. Lütfen tekrar deneyin.",
+      "signedInAs": "Olarak oturum açtınız",
+      "signedOut": "Oturum açmadınız"
+    },
+    "messages": {
+      "successTitle": "Başarılı!",
+      "saved": "Kaydedildi."
+    },
+    "errors": {
+      "genericTitle": "Hata",
+      "tryAgain": "Lütfen tekrar deneyin.",
+      "notLoggedIn": "Oturum açmadınız.",
+      "clientReqIdMissing": "İstemci istek kimliği eksik.",
+      "notFound": "Bulunamadı."
+    },
+    "misc": {
+      "loading": "Yükleniyor…",
+      "cancel": "İptal"
+    },
+    "login": "Giriş yap",
+    "logout": "Çıkış",
+    "logoutConfirm": {
+      "title": "Çıkış yapılsın mı?",
+      "body": "Bu cihazda oturumunuz kapatılacak.",
+      "cta": "Çıkış yap"
+    }
+  },
+  "login": {
+    "title": "Giriş",
+    "subtitle": "Devam etmek için giriş yapın",
+    "emailPlaceholder": "e-posta@adresiniz.com",
+    "send": "Sihirli bağlantı gönder",
+    "sending": "Gönderiliyor…",
+    "enterEmail": "E-posta adresinizi girin.",
+    "checkInbox": "Gelen kutunuzu kontrol edin — giriş bağlantısı gönderdik.",
+    "error": "Bir sorun oluştu.",
+    "continueFacebook": "Facebook ile devam et",
+    "continueGoogle": "Google ile devam et",
+    "continueApple": "Apple ile devam et",
+    "magicTitle": "Ya da Sihirli Bağlantıyla giriş yapın",
+    "emailPH": "e-posta@adresiniz.com",
+    "sendMagic": "Sihirli Bağlantı gönder",
+    "hint": "Otomatik yönlendirilmezseniz, bağlantıyı bu cihazda açın.",
+    "tryAgain": "Lütfen tekrar deneyin.",
+    "oauthFailed": "OAuth akışı başarısız."
+  },
+  "audio": {
+    "errors": {
+      "invalidMeta": "Geçersiz medya meta verisi (id eksik).",
+      "unknownId": "Bilinmeyen medya kimliği: {{id}}",
+      "playback": "Oynatma hatası."
+    }
+  }
+}

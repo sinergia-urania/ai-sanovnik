@@ -1,0 +1,313 @@
+{
+  "home": {
+    "interpret": "सपनों की व्याख्या",
+    "journal": "स्वप्न डायरी",
+    "lucid": "सचेत स्वप्न प्रशिक्षण",
+    "media": "मीडिया",
+    "plans": "एक्सेस / योजनाएँ"
+  },
+  "interpretation": {
+    "enterDream": "कृपया पहले अपना सपना दर्ज करें।",
+    "chosen": "चयनित विधि",
+    "dream": "आपका सपना",
+    "dreamPH": "अपना सपना यहाँ लिखें…",
+    "feelings": "जागने के बाद आप कैसा महसूस कर रहे थे?",
+    "feelingsPH": "जैसे, शांत, चिंतित, आशावान…",
+    "events": "हाल की महत्वपूर्ण घटनाएँ",
+    "eventsPH": "काम, संबंध, स्वास्थ्य, यात्रा…",
+    "scientific": "वैज्ञानिक (Jung/Freud/Szondi)",
+    "traditional": "परंपरागत (ड्रीमबुक)",
+    "scientificShort": "वैज्ञानिक",
+    "traditionalShort": "परंपरागत",
+    "adNoticePreAnswer": "उत्तर से पहले एक छोटा विज्ञापन दिख सकता है।"
+  },
+  "journal": {
+    "details": "सपना",
+    "newEntry": "नई प्रविष्टि",
+    "edit": "प्रविष्टि संपादित करें",
+    "untitled": "शीर्षकहीन",
+    "empty": "अभी कोई प्रविष्टि नहीं।",
+    "titlePH": "शीर्षक",
+    "contentPH": "अपना सपना लिखें…",
+    "sendToInterpretation": "व्याख्या के लिए भेजें",
+    "saveToJournal": "डायरी में सहेजें",
+    "openJournal": "डायरी खोलें",
+    "contentRequired": "सपने की सामग्री दर्ज करें।",
+    "lockedBody": "स्वप्न डायरी प्रीमियम योजना से उपलब्ध है।",
+    "filter": {
+      "all": "सभी",
+      "notes": "केवल नोट्स",
+      "interpreted": "व्याख्यायित"
+    }
+  },
+  "lucid": {
+    "tapToOpen": "खोलने के लिए टैप करें",
+    "lesson": "पाठ",
+    "lessonBody": "TODO: पाठ सामग्री बैकएंड से लोड होगी।",
+    "lockedBody": "सचेत स्वप्न प्रशिक्षण PRO योजना में उपलब्ध है।"
+  },
+  "media": {
+    "header": "रिलैक्स म्यूज़िक और बाइनॉरल टोन",
+    "tapToPlay": "चलाने के लिए टैप करें",
+    "lockedBody": "मीडिया PRO योजना में उपलब्ध है।",
+    "sections": {
+      "binaural": "बाइनॉरल",
+      "shortRelax": "लघु रिलैक्स (≤15मि)",
+      "longRelax": "दीर्घ रिलैक्स व ध्यान"
+    },
+    "controls": {
+      "play": "चलाएँ",
+      "pause": "रोकें",
+      "stop": "बंद करें"
+    },
+    "badge": {
+      "playing": "चल रहा है"
+    }
+  },
+  "plans": {
+    "header": "एक्सेस व मूल्य निर्धारण",
+    "freeLimits": "मूल व्याख्या सीमाएँ, डायरी और मीडिया ब्राउज़िंग।",
+    "premiumLimits": "पूर्ण व्याख्याएँ, उन्नत पाठ और संपूर्ण मीडिया लाइब्रेरी।",
+    "freePrice": "0 €/माह",
+    "premiumPrice": "€/माह (TBD)"
+  },
+  "result": {
+    "interpretation": "व्याख्या",
+    "tryTraditional": "परंपरागत विधि आज़माएँ",
+    "tryScientific": "वैज्ञानिक विधि आज़माएँ",
+    "useOneInterpretationTitle": "1 व्याख्या उपयोग करें?",
+    "useOneInterpretationBody": "दूसरी विधि आज़माने पर 1 व्याख्या खर्च होगी।",
+    "waiting": "उत्तर की प्रतीक्षा…",
+    "summary": "सार",
+    "keySymbols": "मुख्य प्रतीक",
+    "meanings": "संभावित अर्थ",
+    "advice": "कोमल सलाह",
+    "method": "विधि",
+    "rationale": "क्यों यह विधि",
+    "methods": {
+      "jung": "युंग",
+      "freud": "फ्रायड",
+      "szondi": "सोंदी"
+    }
+  },
+  "billing": {
+    "notEnoughTokensTitle": "कोई व्याख्या शेष नहीं",
+    "notEnoughTokensBody": "किसी अन्य विधि को आज़माने के लिए अपनी योजना अपग्रेड करें या बैलेंस बढ़ाएँ।"
+  },
+  "stt": {
+    "start": "रिकॉर्डिंग शुरू करें",
+    "stop": "रोकें",
+    "speak": "बोलें",
+    "listening": "सुन रहा है…"
+  },
+  "common": {
+    "unknown": "अज्ञात",
+    "save": "सहेजें",
+    "delete": "हटाएँ",
+    "home": "होम",
+    "answer": "उत्तर",
+    "cancel": "रद्द करें",
+    "continue": "जारी रखें",
+    "ok": "ठीक",
+    "upgrade": "अपग्रेड",
+    "saved": "सहेजा गया",
+    "deleted": "हटा दिया गया",
+    "promo": {
+      "title": "हमारा नया ऐप आज़माएँ",
+      "cta": "Una Astro-Tarot AI"
+    },
+    "membership": {
+      "title": "योजनाएँ व सदस्यता",
+      "packages": {
+        "free": "मुफ़्त",
+        "premium": "प्रीमियम",
+        "pro": "PRO"
+      },
+      "labels": {
+        "perMonth": "प्रति माह",
+        "currentPlan": "योजना:"
+      },
+      "features": {
+        "journal": "स्वप्न डायरी",
+        "lucid": "सचेत स्वप्न प्रशिक्षण",
+        "media": "मीडिया",
+        "ads": "विज्ञापन"
+      },
+      "values": {
+        "aiModel": "एआई मॉडल: {{model}}",
+        "cap": "CAP बैंक: {{cap}}",
+        "noBank": "बैंक: नहीं",
+        "model": "एआई मॉडल: {{model}}",
+        "capWithBank": "CAP बैंक: {{cap}}",
+        "capNoBank": "बैंक: नहीं"
+      },
+      "cta": {
+        "buyPremium": "प्रीमियम खरीदें ({{price}} {{currency}}/माह)",
+        "buyPro": "PRO खरीदें ({{price}} {{currency}}/माह)",
+        "free": "मुफ़्त पर रहें",
+        "currentPlan": "वर्तमान योजना",
+        "downgradeNoCharge": "बिना शुल्क डाउनग्रेड करें"
+      },
+      "notes": {
+        "cancelPolicy": "रद्द करने पर सदस्यता नवीनीकरण तिथि पर मुफ़्त योजना सक्रिय होगी। CAP अधिकतम सीमा तय करता है और बैलेंस में क्षय नहीं होता।",
+        "upgradeRules": "अपग्रेड: Premium +30 तुरंत; Free→Pro +50, Premium→Pro +50. डाउनग्रेड Pro→Premium: बैलेंस CAP 90 तक काटा जाएगा। मुफ़्त मासिक सीमा: 10."
+      },
+      "toast": {
+        "planChanged": "योजना सफलतापूर्वक बदली गई।",
+        "downgradeNoCharge": "बिना शुल्क डाउनग्रेड किया गया। कोई त्वरित बोनस नहीं।"
+      },
+      "wallet": {
+        "line": "वॉलेट: {{balance}}"
+      },
+      "proplus": {
+        "title": "ProPlus (वार्षिक)",
+        "desc": "600 व्याख्याएँ तुरंत + CAP नहीं, 12 महीनों के लिए मान्य।",
+        "buyCta": "ProPlus खरीदें ({{price}} {{currency}}/वर्ष)",
+        "activeCta": "ProPlus सक्रिय है",
+        "activeLine": "ProPlus: {{remaining}} (समाप्ति {{date}}) · वॉलेट: {{balance}}",
+        "successTitle": "ProPlus सक्रिय हुआ!",
+        "successBody": "600 जोड़े गए और योजना समाप्ति तक लॉक हुई।",
+        "lockTitle": "ProPlus सक्रिय है",
+        "lockBody": "ProPlus सक्रिय रहते योजना परिवर्तन अक्षम हैं।",
+        "best": "सर्वश्रेष्ठ ऑफ़र"
+      },
+      "addons": {
+        "buyPack20": "+20 टॉप-अप खरीदें ({{price}} {{currency}})",
+        "blockedFreeTitle": "मुफ़्त योजना में उपलब्ध नहीं",
+        "blockedFreeBody": "मुफ़्त योजना में टॉप-अप उपलब्ध नहीं है।",
+        "limitReachedTitle": "सीमा पूरी",
+        "limitReachedBody": "इस योजना में और क्रेडिट नहीं जोड़ सकते।",
+        "partialTitle": "आंशिक टॉप-अप",
+        "partialBody": "पैकेज सीमा के कारण, 20 में से केवल {{count}} जोड़े जा सकते हैं।",
+        "partialCta": "{{count}} जोड़ें",
+        "okProPlus": "ProPlus बैलेंस में जोड़ा गया!",
+        "okWallet": "टॉप-अप सफल",
+        "nothing": "कुछ नहीं जोड़ा गया (सीमा पर)",
+        "added": "जोड़ा गया: {{added}}"
+      },
+      "cancel": {
+        "schedule": "चक्र के अंत में रद्द करें",
+        "undo": "रद्दीकरण हटाएँ",
+        "scheduled": "रद्दीकरण चक्र के अंत के लिए निर्धारित किया गया है।",
+        "reverted": "रद्दीकरण हटा दिया गया।",
+        "scheduledAt": "FREE पर स्विच अनुसूचित",
+        "confirmTitle": "क्या आप वाकई रद्द करना चाहते हैं?",
+        "confirmBody": "आप वर्तमान बिलिंग चक्र के अंत में FREE पर स्विच हो जाएँगे।",
+        "confirmCta": "योजना रद्द करें",
+        "undoTitle": "रद्दीकरण हटाएँ?",
+        "undoBody": "नवीनीकरण के बाद आप अपनी वर्तमान योजना बनाए रखेंगे।",
+        "undoCta": "हटाएँ"
+      }
+    },
+    "menu": {
+      "profile": "प्रोफ़ाइल",
+      "settings": "सेटिंग्स",
+      "about": "परिचय",
+      "plans": "योजनाएँ",
+      "support": "रेट करें व साझा करें",
+      "contact": "संपर्क"
+    },
+    "support": {
+      "title": "सहायता",
+      "rate": "ऐप को रेट करें",
+      "share": "दोस्तों के साथ साझा करें",
+      "shareMessage": "मैं DreamCodex AI की सिफारिश करता/करती हूँ — सपनों की व्याख्या और सचेत स्वप्न: "
+    },
+    "buttons": {
+      "close": "बंद करें",
+      "cancel": "रद्द करें"
+    },
+    "settings": {
+      "title": "सेटिंग्स",
+      "mute": "म्यूट",
+      "volume": "वॉल्यूम",
+      "language": "भाषा",
+      "chooseLanguage": "भाषा चुनें",
+      "notifications": "सूचनाएँ"
+    },
+    "legal": {
+      "title": "कानूनी",
+      "disclaimer": "अस्वीकरण",
+      "terms": "उपयोग की शर्तें",
+      "privacy": "गोपनीयता नीति",
+      "dataDeletion": "डेटा विलोपन"
+    },
+    "labels": {
+      "updatedAt": "अपडेट किया गया",
+      "openOnWeb": "वेब पर खोलें"
+    },
+    "app": {
+      "name": "DreamCodex AI"
+    },
+    "profile": {
+      "title": "प्रोफ़ाइल",
+      "displayName": "प्रदर्शित नाम",
+      "displayNamePH": "उदा. मीरा",
+      "plan": "योजना",
+      "balance": "शेष राशि",
+      "allowance": "मासिक टॉप-अप",
+      "cap": "CAP",
+      "started": "चक्र से",
+      "nextTopup": "अगला टॉप-अप",
+      "managePlan": "योजना प्रबंधित करें",
+      "available": "उपलब्ध (कुल)",
+      "proplus": "ProPlus बैलेंस",
+      "proplusExpiry": "ProPlus की समाप्ति",
+      "wallet": "वॉलेट",
+      "linkApple": "Apple खाता लिंक करें",
+      "appleLinked": "Apple खाता लिंक है ✔",
+      "appleLinkedOk": "Apple खाता लिंक हो गया।",
+      "appleLinkedMissing": "लिंक किया हुआ Apple खाता दिखाई नहीं दे रहा। कृपया फिर प्रयास करें।",
+      "signedInAs": "के रूप में साइन इन",
+      "signedOut": "आप साइन इन नहीं हैं"
+    },
+    "messages": {
+      "successTitle": "सफल!",
+      "saved": "सहेजा गया."
+    },
+    "errors": {
+      "genericTitle": "त्रुटि",
+      "tryAgain": "कृपया फिर प्रयास करें।",
+      "notLoggedIn": "आप लॉग इन नहीं हैं।",
+      "clientReqIdMissing": "क्लाइंट अनुरोध ID अनुपस्थित है।",
+      "notFound": "नहीं मिला।"
+    },
+    "misc": {
+      "loading": "लोड हो रहा है…",
+      "cancel": "रद्द करें"
+    },
+    "login": "लॉग इन",
+    "logout": "लॉग आउट",
+    "logoutConfirm": {
+      "title": "लॉग आउट करें?",
+      "body": "आपका इस डिवाइस पर सत्र समाप्त हो जाएगा।",
+      "cta": "मुझे लॉग आउट करें"
+    }
+  },
+  "login": {
+    "title": "लॉग इन",
+    "subtitle": "जारी रखने के लिए साइन इन करें",
+    "emailPlaceholder": "aapka@email.com",
+    "send": "मैजिक लिंक भेजें",
+    "sending": "भेजा जा रहा है…",
+    "enterEmail": "अपना ईमेल पता दर्ज करें।",
+    "checkInbox": "इनबॉक्स देखें — हमने लॉगिन लिंक भेजा है।",
+    "error": "कुछ गलत हो गया।",
+    "continueFacebook": "Facebook के साथ जारी रखें",
+    "continueGoogle": "Google के साथ जारी रखें",
+    "continueApple": "Apple के साथ जारी रखें",
+    "magicTitle": "या मैजिक लिंक से साइन इन करें",
+    "emailPH": "aapka@email.com",
+    "sendMagic": "मैजिक लिंक भेजें",
+    "hint": "यदि स्वतः रीडायरेक्ट नहीं होते, लिंक इसी डिवाइस पर खोलें।",
+    "tryAgain": "कृपया फिर प्रयास करें।",
+    "oauthFailed": "OAuth प्रक्रिया विफल हुई।"
+  },
+  "audio": {
+    "errors": {
+      "invalidMeta": "अवैध मीडिया मेटाडेटा (id अनुपस्थित)।",
+      "unknownId": "अज्ञात मीडिया ID: {{id}}",
+      "playback": "प्लेबैक त्रुटि।"
+    }
+  }
+}

@@ -2,7 +2,6 @@
 import { Feather } from '@expo/vector-icons';
 import { useFocusEffect, useNavigation, useRoute } from '@react-navigation/native';
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import {
   BackHandler,
   Platform,
@@ -20,6 +19,7 @@ import { useSound } from '../providers/SoundProvider';
 
 import { onQuotaRefresh, triggerQuotaRefresh } from '../utils/quotaBus';
 
+import LangPickerButton from './LangPickerButton'; // ⬅️ NOVO
 import ProfileModal from './ProfileModal';
 import SidebarMenu from './SidebarMenu';
 
@@ -27,11 +27,6 @@ const GOLD  = '#F2C94C';
 const GREEN = '#00C853';
 
 // SHEMA PO EKRANIMA
-// - Home: zadržavamo meni + jezik + zvuk
-// - JournalList: back, BEZ menija/jezika/zvuka
-// - JournalEdit: home, BEZ menija/jezika/zvuka
-// - Interpretation: back, BEZ jezika/zvuka
-// - Result: home, BEZ jezika/zvuka
 const SCHEMES = {
   Home:           { left: 'menu',  showTitle: false, right: ['user','counter','plan','lang','sound'] },
   JournalList:    { left: 'back',  showTitle: false, right: ['user','counter','plan'] },
@@ -55,7 +50,6 @@ function ellipsize(s, max = 9) {
 export default function AppHeader() {
   const nav = useNavigation();
   const route = useRoute();
-  const { t, i18n } = useTranslation(['common']);
   const insets = useSafeAreaInsets();
   const { session } = useAuth();
 
@@ -90,10 +84,6 @@ export default function AppHeader() {
     return email ? email.split('@')[0] : 'User';
   }, [session?.user?.email]);
   const uiName = ellipsize(displayName || emailFallback, 9);
-
-  const toggleLang = useCallback(() => {
-    i18n.changeLanguage(i18n.language?.startsWith('sr') ? 'en' : 'sr');
-  }, [i18n]);
 
   // API calls
   const fetchQuota = useCallback(async () => {
@@ -209,11 +199,11 @@ export default function AppHeader() {
           </Text>
         </View>
       )}
-      {/* Jezik i zvuk se prikazuju SAMO po shemi (u compact-u na Home sakriven 'sound') */}
+      {/* Jezik: zamenjeno sr/en toggle sa globalnim pickerom */}
       {rightKeys?.includes('lang') && (
-        <TouchableOpacity onPress={toggleLang} style={[styles.pillMini, isCompact && styles.pillMiniCompact]}>
-          <Text style={styles.pillMiniTxt}>{(i18n.language || 'en').toUpperCase()}</Text>
-        </TouchableOpacity>
+        <View style={[styles.langBtnWrap, isCompact && styles.langBtnWrapCompact]}>
+          <LangPickerButton compact />
+        </View>
       )}
       {rightKeys?.includes('sound') && (
         <TouchableOpacity onPress={() => setMuted(!muted)} style={[styles.pillMini, isCompact && styles.pillMiniCompact]}>
@@ -306,4 +296,8 @@ const styles = StyleSheet.create({
   pillMiniCompact: { paddingVertical: 3, paddingHorizontal: 8 },
 
   pillMiniTxt: { color: '#ddd', fontWeight: '700', fontSize: 12 },
+
+  // wrap oko 🌐 dugmeta da stane u niz
+  langBtnWrap: { borderRadius: 999, overflow: 'hidden' },
+  langBtnWrapCompact: {},
 });

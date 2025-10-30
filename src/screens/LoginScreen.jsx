@@ -1,6 +1,6 @@
 // File: src/screens/LoginScreen.jsx
 import { FontAwesome } from '@expo/vector-icons';
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
   ActivityIndicator,
@@ -27,18 +27,56 @@ const isEmail = (s) => typeof s === 'string' && /\S+@\S+\.\S+/.test(s);
 
 export default function LoginScreen() {
   const { t } = useTranslation();
-  const { loading } = useAuth();
-
+  useAuth(); // držimo provider mount-ovan
   const [busy, setBusy] = useState(null); // 'google' | 'facebook' | 'apple' | 'magic' | null
   const [email, setEmail] = useState('');
 
-  const disabled = !!busy || loading;
+  // centralizovani safety timer (da ne ostane beskonačan spinner)
+  const safetyRef = useRef(null);
+  const armSafety = (label, ms = 20000) => {
+    clearTimeout(safetyRef.current);
+    safetyRef.current = setTimeout(() => {
+      console.log('[login] safety-timeout firing for', label);
+      setBusy(null);
+      Toast.show({
+        type: 'error',
+        text1: t('login.error', { defaultValue: 'Greška pri prijavi' }),
+        text2: t('login.tryAgain', { defaultValue: 'Pokušaj ponovo.' }),
+      });
+    }, ms);
+  };
+  const disarmSafety = () => { clearTimeout(safetyRef.current); safetyRef.current = null; };
+
+  // ⭐ Važno: NEMA više navigation.reset ovde — Gate menja stablo
+  useEffect(() => {
+    const { data: sub } = supabase.auth.onAuthStateChange((event, session) => {
+      if (busy) {
+        console.log('[login] onAuthStateChange ->', event, ' => clear busy');
+        setBusy(null);
+        disarmSafety();
+      }
+      // Nema ručne navigacije — Gate otvara AppStack kada session postoji
+      if (event === 'SIGNED_IN' && session?.user?.id) {
+        console.log('[login] SIGNED_IN observed (Gate će prebaciti na Home)');
+      }
+    });
+    return () => sub?.subscription?.unsubscribe?.();
+  }, [busy]);
+
+  // očisti safety timer pri unmount-u
+  useEffect(() => () => disarmSafety(), []);
+
+  const disabled = !!busy;
 
   const doOAuth = async (provider) => {
     if (disabled) return;
+    console.log('[login] press provider=', provider);
     setBusy(provider);
+    armSafety(provider, 25000);
+
     try {
       const r = await signInWithProvider(provider);
+      console.log('[login] signInWithProvider result =', r);
       if (!r?.ok) {
         Toast.show({
           type: 'error',
@@ -47,12 +85,16 @@ export default function LoginScreen() {
         });
       }
     } catch (e) {
+      console.log('[login] doOAuth error =', e);
       Toast.show({
         type: 'error',
         text1: t('login.error', { defaultValue: 'Greška pri prijavi' }),
         text2: t('login.oauthFailed', { defaultValue: 'OAuth tok nije uspeo.' }),
       });
     } finally {
+      // u normalnom toku AuthProvider/Gate skloni ovaj ekran;
+      // ipak očisti lokalno da UI ne zapne
+      disarmSafety();
       setBusy(null);
     }
   };
@@ -60,6 +102,7 @@ export default function LoginScreen() {
   const sendMagicLink = async () => {
     if (disabled) return;
     const e = email.trim();
+    console.log('[login] sendMagicLink start, email=', e);
     if (!isEmail(e)) {
       Toast.show({
         type: 'info',
@@ -68,7 +111,10 @@ export default function LoginScreen() {
       });
       return;
     }
+
     setBusy('magic');
+    armSafety('magic', 25000);
+
     try {
       const { error } = await supabase.auth.signInWithOtp({
         email: e,
@@ -80,13 +126,16 @@ export default function LoginScreen() {
         text1: t('login.title', { defaultValue: 'Prijava' }),
         text2: t('login.checkInbox', { defaultValue: 'Proveri email i otvori link na ovom uređaju.' }),
       });
+      console.log('[login] sendMagicLink OK');
     } catch (err) {
+      console.log('[login] sendMagicLink error =', err);
       Toast.show({
         type: 'error',
         text1: t('login.error', { defaultValue: 'Greška pri prijavi' }),
         text2: err?.message ?? t('login.tryAgain', { defaultValue: 'Pokušaj ponovo.' }),
       });
     } finally {
+      disarmSafety();
       setBusy(null);
     }
   };
@@ -217,7 +266,7 @@ export default function LoginScreen() {
             })}
           </Text>
 
-          {/* Dno padding da input ne “nalegne” uz ivicu */}
+          {/* Dno padding */}
           <View style={{ height: 24 }} />
         </ScrollView>
       </KeyboardAvoidingView>

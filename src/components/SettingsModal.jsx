@@ -19,45 +19,33 @@ import { registerPushToken } from '../lib/push/registerPushToken';
 import { supabase } from '../lib/supabaseClient';
 import { useAuth } from '../providers/AuthProvider';
 
+// ⬇️ NOVO: centralizovana lista jezika + i18n helper
+import i18n, { setAppLanguage } from '../i18n';
+import { LANGS } from '../lib/i18nLangs';
+
 const STORE_KEYS = {
-  lang:  'settings:lang',
+  // lang više ne čuvamo ovde; koristi i18n.setAppLanguage
   notif: 'settings:notifications',
 };
 
-// Extend as you localize
-const LANGS = [
-  { code: 'en', label: 'English', flag: '🇬🇧' },
-  { code: 'sr', label: 'Srpski',  flag: '🇷🇸' },
-  // { code: 'es', label: 'Español',  flag: '🇪🇸' },
-  // { code: 'de', label: 'Deutsch',  flag: '🇩🇪' },
-  // { code: 'fr', label: 'Français', flag: '🇫🇷' },
-  // { code: 'it', label: 'Italiano', flag: '🇮🇹' },
-  // { code: 'pt', label: 'Português', flag: '🇵🇹' },
-  // { code: 'hi', label: 'हिंदी',     flag: '🇮🇳' },
-];
-
 export default function SettingsModal({ visible, onClose }) {
-  const { t, i18n } = useTranslation(['common']);
+  const { t } = useTranslation(['common']);
   const { muted, setMuted, volume, setVolume } = useSound(); // global source of truth
-  // ⬇️ PATCH: user iz Auth providera
   const { user } = useAuth();
 
-  // language + notifications local state (persisted here)
+  // language + notifications local state (persisted only notif here)
   const initialLang = useMemo(() => (i18n?.language || 'en').slice(0, 2), [i18n?.language]);
   const [lang, setLang] = useState(initialLang);
   const [notifEnabled, setNotifEnabled] = useState(true);
   const [langPickerOpen, setLangPickerOpen] = useState(false);
 
-  // Load lang/notif on open
+  // Load notif on open; lang čitamo iz i18n
   useEffect(() => {
     if (!visible) return;
     (async () => {
       try {
-        const [l, n] = await Promise.all([
-          AsyncStorage.getItem(STORE_KEYS.lang),
-          AsyncStorage.getItem(STORE_KEYS.notif),
-        ]);
-        setLang((l || initialLang).slice(0, 2));
+        const n = await AsyncStorage.getItem(STORE_KEYS.notif);
+        setLang((i18n?.language || initialLang).slice(0, 2));
         setNotifEnabled(n === null ? true : n === '1');
       } catch {}
     })();
@@ -74,9 +62,8 @@ export default function SettingsModal({ visible, onClose }) {
   };
 
   const changeLanguage = async (code) => {
-    setLang(code);
-    try { await i18n.changeLanguage(code); } catch {}
-    try { await AsyncStorage.setItem(STORE_KEYS.lang, code); } catch {}
+    await setAppLanguage(code); // persist + i18n.changeLanguage
+    setLang((i18n?.language || code).slice(0, 2));
   };
 
   // iOS/Android-safe notifications permission
@@ -99,7 +86,7 @@ export default function SettingsModal({ visible, onClose }) {
     } catch { return false; }
   };
 
-  // ⬇️ PATCH: toggleNotifications sada sinhronizuje i sa DB (push_devices)
+  // ⬇️ toggleNotifications sada sinhronizuje i sa DB (push_devices)
   const toggleNotifications = async (next) => {
     if (next) {
       const ok = await ensureNotifPermission();

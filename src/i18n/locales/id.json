@@ -1,0 +1,313 @@
+{
+  "home": {
+    "interpret": "Penafsiran Mimpi",
+    "journal": "Jurnal Mimpi",
+    "lucid": "Pelatihan Mimpi Sadar",
+    "media": "Media",
+    "plans": "Akses / Paket"
+  },
+  "interpretation": {
+    "enterDream": "Silakan masukkan mimpi Anda terlebih dahulu.",
+    "chosen": "Metode yang dipilih",
+    "dream": "Mimpi Anda",
+    "dreamPH": "Tulis mimpi Anda di sini…",
+    "feelings": "Bagaimana perasaan Anda saat bangun?",
+    "feelingsPH": "mis.: tenang, cemas, penuh harap…",
+    "events": "Peristiwa penting terbaru",
+    "eventsPH": "Pekerjaan, hubungan, kesehatan, perjalanan…",
+    "scientific": "Ilmiah (Jung/Freud/Szondi)",
+    "traditional": "Tradisional (Buku Mimpi)",
+    "scientificShort": "Ilmiah",
+    "traditionalShort": "Tradisional",
+    "adNoticePreAnswer": "Iklan singkat mungkin muncul sebelum jawaban."
+  },
+  "journal": {
+    "details": "Mimpi",
+    "newEntry": "Entri baru",
+    "edit": "Edit entri",
+    "untitled": "Tanpa judul",
+    "empty": "Belum ada entri.",
+    "titlePH": "Judul",
+    "contentPH": "Tulis mimpi Anda…",
+    "sendToInterpretation": "Kirim untuk penafsiran",
+    "saveToJournal": "Simpan ke jurnal",
+    "openJournal": "Buka jurnal",
+    "contentRequired": "Masukkan isi mimpi.",
+    "lockedBody": "Jurnal Mimpi tersedia mulai paket Premium.",
+    "filter": {
+      "all": "Semua",
+      "notes": "Hanya catatan",
+      "interpreted": "Sudah ditafsirkan"
+    }
+  },
+  "lucid": {
+    "tapToOpen": "Ketuk untuk membuka",
+    "lesson": "Pelajaran",
+    "lessonBody": "TODO: Konten pelajaran akan dimuat dari backend.",
+    "lockedBody": "Pelatihan mimpi sadar tersedia di paket PRO."
+  },
+  "media": {
+    "header": "Musik relaksasi & nada binaural",
+    "tapToPlay": "Ketuk untuk memutar",
+    "lockedBody": "Media tersedia di paket PRO.",
+    "sections": {
+      "binaural": "Binaural",
+      "shortRelax": "Relaks singkat (≤15 mnt)",
+      "longRelax": "Relaks panjang & meditasi"
+    },
+    "controls": {
+      "play": "Putar",
+      "pause": "Jeda",
+      "stop": "Hentikan"
+    },
+    "badge": {
+      "playing": "Memutar"
+    }
+  },
+  "plans": {
+    "header": "Akses & harga",
+    "freeLimits": "Batas interpretasi dasar, jurnal dan penjelajahan media.",
+    "premiumLimits": "Interpretasi lengkap, pelajaran lanjutan dan perpustakaan media penuh.",
+    "freePrice": "0 €/bln",
+    "premiumPrice": "€/bln (akan ditentukan)"
+  },
+  "result": {
+    "interpretation": "Penafsiran",
+    "tryTraditional": "Coba metode tradisional",
+    "tryScientific": "Coba metode ilmiah",
+    "useOneInterpretationTitle": "Gunakan 1 interpretasi?",
+    "useOneInterpretationBody": "Mencoba metode lain akan menghabiskan 1 interpretasi.",
+    "waiting": "Menunggu jawaban…",
+    "summary": "Ringkasan",
+    "keySymbols": "Simbol kunci",
+    "meanings": "Makna yang mungkin",
+    "advice": "Saran lembut",
+    "method": "Metode",
+    "rationale": "Mengapa metode ini",
+    "methods": {
+      "jung": "Jung",
+      "freud": "Freud",
+      "szondi": "Szondi"
+    }
+  },
+  "billing": {
+    "notEnoughTokensTitle": "Tidak ada interpretasi tersisa",
+    "notEnoughTokensBody": "Tingkatkan paket Anda atau isi ulang saldo untuk mencoba metode lain."
+  },
+  "stt": {
+    "start": "Mulai rekam",
+    "stop": "Berhenti",
+    "speak": "Bicara",
+    "listening": "Mendengarkan…"
+  },
+  "common": {
+    "unknown": "Tidak diketahui",
+    "save": "Simpan",
+    "delete": "Hapus",
+    "home": "Beranda",
+    "answer": "Jawaban",
+    "cancel": "Batal",
+    "continue": "Lanjutkan",
+    "ok": "OK",
+    "upgrade": "Tingkatkan",
+    "saved": "Tersimpan",
+    "deleted": "Dihapus",
+    "promo": {
+      "title": "Coba aplikasi baru kami",
+      "cta": "Una Astro-Tarot AI"
+    },
+    "membership": {
+      "title": "Paket & Langganan",
+      "packages": {
+        "free": "Free",
+        "premium": "Premium",
+        "pro": "PRO"
+      },
+      "labels": {
+        "perMonth": "per bulan",
+        "currentPlan": "Paket:"
+      },
+      "features": {
+        "journal": "Jurnal Mimpi",
+        "lucid": "Pelatihan mimpi sadar",
+        "media": "Media",
+        "ads": "Iklan"
+      },
+      "values": {
+        "aiModel": "Model AI: {{model}}",
+        "cap": "Bank CAP: {{cap}}",
+        "noBank": "Bank: tidak ada",
+        "model": "Model AI: {{model}}",
+        "capWithBank": "Bank CAP: {{cap}}",
+        "capNoBank": "Bank: tidak ada"
+      },
+      "cta": {
+        "buyPremium": "Beli Premium ({{price}} {{currency}}/bln)",
+        "buyPro": "Beli PRO ({{price}} {{currency}}/bln)",
+        "free": "Tetap di Free",
+        "currentPlan": "Paket saat ini",
+        "downgradeNoCharge": "Downgrade tanpa biaya"
+      },
+      "notes": {
+        "cancelPolicy": "Membatalkan akan mengalihkan ke Free pada tanggal perpanjangan. CAP membatasi maksimum dan tidak ada penurunan saldo.",
+        "upgradeRules": "Upgrade: Premium +30 langsung; Free→Pro +50, Premium→Pro +50. Downgrade Pro→Premium: saldo dipotong ke CAP 90. Batas bulanan Free: 10."
+      },
+      "toast": {
+        "planChanged": "Paket berhasil diubah.",
+        "downgradeNoCharge": "Downgrade tanpa biaya. Tidak ada bonus instan."
+      },
+      "wallet": {
+        "line": "Dompet: {{balance}}"
+      },
+      "proplus": {
+        "title": "ProPlus (tahunan)",
+        "desc": "600 interpretasi langsung + tanpa CAP, berlaku 12 bulan.",
+        "buyCta": "Beli ProPlus ({{price}} {{currency}}/tahun)",
+        "activeCta": "ProPlus aktif",
+        "activeLine": "ProPlus: {{remaining}} (kedaluwarsa {{date}}) · Dompet: {{balance}}",
+        "successTitle": "ProPlus aktif!",
+        "successBody": "600 ditambahkan dan paket terkunci hingga kedaluwarsa.",
+        "lockTitle": "ProPlus aktif",
+        "lockBody": "Perubahan paket dinonaktifkan selama ProPlus aktif.",
+        "best": "Penawaran terbaik"
+      },
+      "addons": {
+        "buyPack20": "Beli isi ulang +20 ({{price}} {{currency}})",
+        "blockedFreeTitle": "Tidak tersedia di paket Free",
+        "blockedFreeBody": "Isi ulang tidak tersedia di paket Free.",
+        "limitReachedTitle": "Batas tercapai",
+        "limitReachedBody": "Anda tidak dapat menambah kredit lagi pada paket ini.",
+        "partialTitle": "Isi ulang parsial",
+        "partialBody": "Karena batas paket, hanya {{count}} dari 20 yang bisa ditambahkan.",
+        "partialCta": "Tambah {{count}}",
+        "okProPlus": "Ditambahkan ke saldo ProPlus!",
+        "okWallet": "Isi ulang berhasil",
+        "nothing": "Tidak ada yang ditambahkan (batas tercapai)",
+        "added": "Ditambahkan: {{added}}"
+      },
+      "cancel": {
+        "schedule": "Batalkan di akhir siklus",
+        "undo": "Batalkan pembatalan",
+        "scheduled": "Pembatalan dijadwalkan pada akhir siklus.",
+        "reverted": "Pembatalan dihapus.",
+        "scheduledAt": "Peralihan ke FREE dijadwalkan",
+        "confirmTitle": "Yakin ingin membatalkan?",
+        "confirmBody": "Anda akan beralih ke FREE di akhir siklus penagihan saat ini.",
+        "confirmCta": "Batalkan paket",
+        "undoTitle": "Hapus pembatalan?",
+        "undoBody": "Anda akan mempertahankan paket saat ini setelah perpanjangan.",
+        "undoCta": "Urungkan"
+      }
+    },
+    "menu": {
+      "profile": "Profil",
+      "settings": "Pengaturan",
+      "about": "Tentang",
+      "plans": "Paket",
+      "support": "Nilai & Bagikan",
+      "contact": "Kontak"
+    },
+    "support": {
+      "title": "Dukungan",
+      "rate": "Beri nilai aplikasi",
+      "share": "Bagikan ke teman",
+      "shareMessage": "Saya merekomendasikan DreamCodex AI — penafsiran mimpi dan mimpi sadar: "
+    },
+    "buttons": {
+      "close": "Tutup",
+      "cancel": "Batal"
+    },
+    "settings": {
+      "title": "Pengaturan",
+      "mute": "Bisukan",
+      "volume": "Volume",
+      "language": "Bahasa",
+      "chooseLanguage": "Pilih bahasa",
+      "notifications": "Notifikasi"
+    },
+    "legal": {
+      "title": "Legal",
+      "disclaimer": "Disclaimer",
+      "terms": "Ketentuan Penggunaan",
+      "privacy": "Kebijakan Privasi",
+      "dataDeletion": "Penghapusan Data"
+    },
+    "labels": {
+      "updatedAt": "Diperbarui",
+      "openOnWeb": "Buka di web"
+    },
+    "app": {
+      "name": "DreamCodex AI"
+    },
+    "profile": {
+      "title": "Profil",
+      "displayName": "Nama tampilan",
+      "displayNamePH": "mis.: Mira",
+      "plan": "Paket",
+      "balance": "Saldo",
+      "allowance": "Isi ulang bulanan",
+      "cap": "CAP",
+      "started": "Siklus mulai",
+      "nextTopup": "Isi ulang berikutnya",
+      "managePlan": "Kelola paket",
+      "available": "Tersedia (total)",
+      "proplus": "Saldo ProPlus",
+      "proplusExpiry": "ProPlus kedaluwarsa",
+      "wallet": "Dompet",
+      "linkApple": "Tautkan akun Apple",
+      "appleLinked": "Akun Apple tertaut ✔",
+      "appleLinkedOk": "Akun Apple berhasil ditautkan.",
+      "appleLinkedMissing": "Saya tidak melihat akun Apple yang tertaut. Coba lagi.",
+      "signedInAs": "Masuk sebagai",
+      "signedOut": "Anda belum masuk"
+    },
+    "messages": {
+      "successTitle": "Berhasil!",
+      "saved": "Tersimpan."
+    },
+    "errors": {
+      "genericTitle": "Kesalahan",
+      "tryAgain": "Silakan coba lagi.",
+      "notLoggedIn": "Anda belum masuk.",
+      "clientReqIdMissing": "ID permintaan klien hilang.",
+      "notFound": "Tidak ditemukan."
+    },
+    "misc": {
+      "loading": "Memuat…",
+      "cancel": "Batal"
+    },
+    "login": "Masuk",
+    "logout": "Keluar",
+    "logoutConfirm": {
+      "title": "Keluar?",
+      "body": "Anda akan keluar di perangkat ini.",
+      "cta": "Keluar"
+    }
+  },
+  "login": {
+    "title": "Masuk",
+    "subtitle": "Masuk untuk melanjutkan",
+    "emailPlaceholder": "email@anda.com",
+    "send": "Kirim tautan ajaib",
+    "sending": "Mengirim…",
+    "enterEmail": "Masukkan alamat email Anda.",
+    "checkInbox": "Periksa kotak masuk — kami telah mengirim tautan login.",
+    "error": "Terjadi kesalahan.",
+    "continueFacebook": "Lanjut dengan Facebook",
+    "continueGoogle": "Lanjut dengan Google",
+    "continueApple": "Lanjut dengan Apple",
+    "magicTitle": "Atau masuk dengan Tautan Ajaib",
+    "emailPH": "email@anda.com",
+    "sendMagic": "Kirim Tautan Ajaib",
+    "hint": "Jika tidak teralihkan otomatis, buka tautan di perangkat ini.",
+    "tryAgain": "Silakan coba lagi.",
+    "oauthFailed": "Alur OAuth gagal."
+  },
+  "audio": {
+    "errors": {
+      "invalidMeta": "Metadata media tidak valid (id hilang).",
+      "unknownId": "ID media tidak dikenal: {{id}}",
+      "playback": "Kesalahan pemutaran."
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "AI Sanovnik",
+    "name": "DreamCodex AI",
     "slug": "ai-sanovnik",
     "owner": "mare82",
     "version": "1.3.0",
@@ -10,24 +10,32 @@
     "android": {
       "package": "com.mare82.aisanovnik",
       "googleServicesFile": "google-services.json",
-      "versionCode": 3,
+      "versionCode": 4,
       "permissions": [
         "com.google.android.gms.permission.AD_ID",
         "android.permission.POST_NOTIFICATIONS"
        
       ],
       "intentFilters": [
-        {
-          "action": "VIEW",
-          "autoVerify": false,
-          "category": ["BROWSABLE", "DEFAULT"],
-          "data": [
-            { "scheme": "com.mare82.aisanovnik", "host": "auth", "pathPrefix": "/callback" },
-            { "scheme": "com.mare82.aisanovnik", "host": "auth" },
-            { "scheme": "com.mare82.aisanovnik", "host": "auth", "pathPattern": ".*" }
-          ]
-        }
-      ]
+      {
+        "action": "VIEW",
+        "autoVerify": false,
+        "category": ["BROWSABLE", "DEFAULT"],
+        "data": [
+          { "scheme": "com.mare82.aisanovnik" }
+        ]
+      },
+     {
+        "action": "VIEW",
+        "autoVerify": false,
+        "category": ["BROWSABLE", "DEFAULT"],
+        "data": [
+          { "scheme": "com.mare82.aisanovnik", "host": "auth", "pathPrefix": "/callback" },
+          { "scheme": "com.mare82.aisanovnik", "host": "auth" },
+          { "scheme": "com.mare82.aisanovnik", "host": "auth", "pathPattern": ".*" }
+        ]
+      }
+    ]
     },
 
     "ios": {
@@ -39,7 +47,7 @@
 
     "plugins": [
       "expo-dev-client",
-      ["expo-audio", { "microphonePermission": "Allow AI Sanovnik to access your microphone." }],
+      ["expo-audio", { "microphonePermission": "Allow DreamCodex AI to access your microphone." }],
       "expo-tracking-transparency",
       "expo-web-browser",
       "expo-notifications",

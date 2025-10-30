@@ -1,0 +1,313 @@
+{
+  "home": {
+    "interpret": "Interprétation des rêves",
+    "journal": "Journal des rêves",
+    "lucid": "Entraînement aux rêves lucides",
+    "media": "Médias",
+    "plans": "Accès / Formules"
+  },
+  "interpretation": {
+    "enterDream": "Veuillez d’abord saisir votre rêve.",
+    "chosen": "Méthode sélectionnée",
+    "dream": "Votre rêve",
+    "dreamPH": "Écrivez votre rêve ici…",
+    "feelings": "Comment vous sentiez-vous au réveil ?",
+    "feelingsPH": "p. ex., calme, anxieux, optimiste…",
+    "events": "Événements importants récents",
+    "eventsPH": "Travail, relations, santé, voyages…",
+    "scientific": "Scientifique (Jung/Freud/Szondi)",
+    "traditional": "Traditionnelle (livre des rêves)",
+    "scientificShort": "Scientifique",
+    "traditionalShort": "Traditionnelle",
+    "adNoticePreAnswer": "Une courte publicité peut s’afficher avant la réponse."
+  },
+  "journal": {
+    "details": "Rêve",
+    "newEntry": "Nouvelle entrée",
+    "edit": "Modifier l’entrée",
+    "untitled": "Sans titre",
+    "empty": "Aucune entrée pour le moment.",
+    "titlePH": "Titre",
+    "contentPH": "Écrivez votre rêve…",
+    "sendToInterpretation": "Envoyer pour interprétation",
+    "saveToJournal": "Enregistrer dans le journal",
+    "openJournal": "Ouvrir le journal",
+    "contentRequired": "Saisissez le contenu du rêve.",
+    "lockedBody": "Le Journal des rêves est disponible à partir de l’offre Premium.",
+    "filter": {
+      "all": "Tous",
+      "notes": "Notes uniquement",
+      "interpreted": "Interprétés"
+    }
+  },
+  "lucid": {
+    "tapToOpen": "Appuyez pour ouvrir",
+    "lesson": "Leçon",
+    "lessonBody": "À FAIRE : le contenu de la leçon sera chargé depuis le backend.",
+    "lockedBody": "La formation au rêve lucide est disponible avec l’offre PRO."
+  },
+  "media": {
+    "header": "Musique de relaxation & sons binauraux",
+    "tapToPlay": "Appuyez pour lire",
+    "lockedBody": "La section Médias est disponible avec l’offre PRO.",
+    "sections": {
+      "binaural": "Binaural",
+      "shortRelax": "Relax court (≤15 min)",
+      "longRelax": "Relax long & méditation"
+    },
+    "controls": {
+      "play": "Lire",
+      "pause": "Pause",
+      "stop": "Arrêter"
+    },
+    "badge": {
+      "playing": "En lecture"
+    }
+  },
+  "plans": {
+    "header": "Accès et tarifs",
+    "freeLimits": "Limites d’interprétation de base, consultation du journal et des médias.",
+    "premiumLimits": "Interprétations complètes, leçons avancées et bibliothèque média complète.",
+    "freePrice": "0 €/mois",
+    "premiumPrice": "€/mois (à préciser)"
+  },
+  "result": {
+    "interpretation": "Interprétation",
+    "tryTraditional": "Essayer la méthode traditionnelle",
+    "tryScientific": "Essayer la méthode scientifique",
+    "useOneInterpretationTitle": "Utiliser 1 interprétation ?",
+    "useOneInterpretationBody": "Essayer une autre méthode consommera 1 interprétation.",
+    "waiting": "En attente de la réponse…",
+    "summary": "Résumé",
+    "keySymbols": "Symboles clés",
+    "meanings": "Sens possibles",
+    "advice": "Conseil bienveillant",
+    "method": "Méthode",
+    "rationale": "Pourquoi cette méthode",
+    "methods": {
+      "jung": "Jung",
+      "freud": "Freud",
+      "szondi": "Szondi"
+    }
+  },
+  "billing": {
+    "notEnoughTokensTitle": "Plus d’interprétations disponibles",
+    "notEnoughTokensBody": "Mettez à niveau votre formule ou alimentez votre solde pour essayer une autre méthode."
+  },
+  "stt": {
+    "start": "Démarrer l’enregistrement",
+    "stop": "Arrêter",
+    "speak": "Parler",
+    "listening": "Écoute…"
+  },
+  "common": {
+    "unknown": "Inconnu",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "home": "Accueil",
+    "answer": "Réponse",
+    "cancel": "Annuler",
+    "continue": "Continuer",
+    "ok": "OK",
+    "upgrade": "Mettre à niveau",
+    "saved": "Enregistré",
+    "deleted": "Supprimé",
+    "promo": {
+      "title": "Essayez notre nouvelle app",
+      "cta": "Una Astro-Tarot AI"
+    },
+    "membership": {
+      "title": "Formules et abonnements",
+      "packages": {
+        "free": "Gratuit",
+        "premium": "Premium",
+        "pro": "PRO"
+      },
+      "labels": {
+        "perMonth": "par mois",
+        "currentPlan": "Offre :"
+      },
+      "features": {
+        "journal": "Journal des rêves",
+        "lucid": "Entraînement lucide",
+        "media": "Médias",
+        "ads": "Publicités"
+      },
+      "values": {
+        "aiModel": "Modèle IA : {{model}}",
+        "cap": "Banque CAP : {{cap}}",
+        "noBank": "Banque : aucune",
+        "model": "Modèle IA : {{model}}",
+        "capWithBank": "Banque CAP : {{cap}}",
+        "capNoBank": "Banque : aucune"
+      },
+      "cta": {
+        "buyPremium": "Acheter Premium ({{price}} {{currency}}/mois)",
+        "buyPro": "Acheter PRO ({{price}} {{currency}}/mois)",
+        "free": "Rester sur Gratuit",
+        "currentPlan": "Offre actuelle",
+        "downgradeNoCharge": "Rétrograder sans frais"
+      },
+      "notes": {
+        "cancelPolicy": "L’annulation prend effet à la date de renouvellement : passage à Gratuit. Le CAP fixe un plafond maximum et il n’y a pas de dépréciation du solde.",
+        "upgradeRules": "Upgrade : Premium +30 immédiats ; Free→Pro +50, Premium→Pro +50. Downgrade Pro→Premium : le solde est réduit au CAP 90. Limite mensuelle Free : 10."
+      },
+      "toast": {
+        "planChanged": "Changement d’offre effectué.",
+        "downgradeNoCharge": "Rétrogradation sans frais. Pas de bonus immédiat."
+      },
+      "wallet": {
+        "line": "Portefeuille : {{balance}}"
+      },
+      "proplus": {
+        "title": "ProPlus (annuel)",
+        "desc": "600 interprétations instantanément + pas de CAP, valable 12 mois.",
+        "buyCta": "Acheter ProPlus ({{price}} {{currency}}/an)",
+        "activeCta": "ProPlus est actif",
+        "activeLine": "ProPlus : {{remaining}} (expire le {{date}}) · Portefeuille : {{balance}}",
+        "successTitle": "ProPlus activé !",
+        "successBody": "600 ajoutés et l’offre est verrouillée jusqu’à l’expiration.",
+        "lockTitle": "ProPlus est actif",
+        "lockBody": "Les changements d’offre sont désactivés tant que ProPlus est actif.",
+        "best": "Meilleure offre"
+      },
+      "addons": {
+        "buyPack20": "Acheter la recharge +20 ({{price}} {{currency}})",
+        "blockedFreeTitle": "Indisponible sur l’offre Gratuite",
+        "blockedFreeBody": "Les recharges ne sont pas disponibles avec l’offre Gratuite.",
+        "limitReachedTitle": "Limite atteinte",
+        "limitReachedBody": "Vous ne pouvez pas ajouter plus de crédit avec cette offre.",
+        "partialTitle": "Recharge partielle",
+        "partialBody": "En raison des limites du forfait, seuls {{count}} sur 20 peuvent être ajoutés.",
+        "partialCta": "Ajouter {{count}}",
+        "okProPlus": "Ajouté au solde ProPlus !",
+        "okWallet": "Recharge réussie",
+        "nothing": "Aucun ajout (limite atteinte)",
+        "added": "Ajouté : {{added}}"
+      },
+      "cancel": {
+        "schedule": "Annuler en fin de cycle",
+        "undo": "Rétablir l’annulation",
+        "scheduled": "Annulation programmée pour la fin du cycle.",
+        "reverted": "Annulation retirée.",
+        "scheduledAt": "Passage à GRATUIT programmé",
+        "confirmTitle": "Voulez-vous vraiment annuler ?",
+        "confirmBody": "Vous passerez à GRATUIT à la fin du cycle de facturation en cours.",
+        "confirmCta": "Annuler l’offre",
+        "undoTitle": "Retirer l’annulation ?",
+        "undoBody": "Vous conserverez votre offre actuelle après le renouvellement.",
+        "undoCta": "Rétablir"
+      }
+    },
+    "menu": {
+      "profile": "Profil",
+      "settings": "Paramètres",
+      "about": "À propos",
+      "plans": "Formules",
+      "support": "Noter & Partager",
+      "contact": "Contact"
+    },
+    "support": {
+      "title": "Assistance",
+      "rate": "Noter l’app",
+      "share": "Partager avec des amis",
+      "shareMessage": "Je recommande DreamCodex AI — interprétation des rêves et rêve lucide : "
+    },
+    "buttons": {
+      "close": "Fermer",
+      "cancel": "Annuler"
+    },
+    "settings": {
+      "title": "Paramètres",
+      "mute": "Couper le son",
+      "volume": "Volume",
+      "language": "Langue",
+      "chooseLanguage": "Choisir la langue",
+      "notifications": "Notifications"
+    },
+    "legal": {
+      "title": "Mentions légales",
+      "disclaimer": "Avertissement",
+      "terms": "Conditions d’utilisation",
+      "privacy": "Politique de confidentialité",
+      "dataDeletion": "Suppression des données"
+    },
+    "labels": {
+      "updatedAt": "Mis à jour",
+      "openOnWeb": "Ouvrir sur le web"
+    },
+    "app": {
+      "name": "DreamCodex AI"
+    },
+    "profile": {
+      "title": "Profil",
+      "displayName": "Nom affiché",
+      "displayNamePH": "ex. Mira",
+      "plan": "Offre",
+      "balance": "Solde",
+      "allowance": "Recharge mensuelle",
+      "cap": "CAP",
+      "started": "Cycle depuis",
+      "nextTopup": "Prochaine recharge",
+      "managePlan": "Gérer l’offre",
+      "available": "Disponible (total)",
+      "proplus": "Solde ProPlus",
+      "proplusExpiry": "Expiration ProPlus",
+      "wallet": "Portefeuille",
+      "linkApple": "Lier le compte Apple",
+      "appleLinked": "Compte Apple lié ✔",
+      "appleLinkedOk": "Compte Apple lié.",
+      "appleLinkedMissing": "Je ne vois pas de compte Apple lié. Veuillez réessayer.",
+      "signedInAs": "Connecté en tant que",
+      "signedOut": "Vous n’êtes pas connecté"
+    },
+    "messages": {
+      "successTitle": "Succès !",
+      "saved": "Enregistré."
+    },
+    "errors": {
+      "genericTitle": "Erreur",
+      "tryAgain": "Veuillez réessayer.",
+      "notLoggedIn": "Vous n’êtes pas connecté.",
+      "clientReqIdMissing": "ID de requête client manquant.",
+      "notFound": "Introuvable."
+    },
+    "misc": {
+      "loading": "Chargement…",
+      "cancel": "Annuler"
+    },
+    "login": "Connexion",
+    "logout": "Se déconnecter",
+    "logoutConfirm": {
+      "title": "Se déconnecter ?",
+      "body": "Vous serez déconnecté sur cet appareil.",
+      "cta": "Me déconnecter"
+    }
+  },
+  "login": {
+    "title": "Connexion",
+    "subtitle": "Connectez-vous pour continuer",
+    "emailPlaceholder": "votre@email.com",
+    "send": "Envoyer le lien magique",
+    "sending": "Envoi…",
+    "enterEmail": "Saisissez votre adresse e-mail.",
+    "checkInbox": "Vérifiez votre boîte de réception — nous avons envoyé un lien de connexion.",
+    "error": "Une erreur s’est produite.",
+    "continueFacebook": "Continuer avec Facebook",
+    "continueGoogle": "Continuer avec Google",
+    "continueApple": "Continuer avec Apple",
+    "magicTitle": "Ou connectez-vous avec un lien magique",
+    "emailPH": "votre@email.com",
+    "sendMagic": "Envoyer le lien magique",
+    "hint": "Si vous n’êtes pas redirigé automatiquement, ouvrez le lien sur cet appareil.",
+    "tryAgain": "Veuillez réessayer.",
+    "oauthFailed": "Échec de l’authentification OAuth."
+  },
+  "audio": {
+    "errors": {
+      "invalidMeta": "Métadonnées média invalides (id manquant).",
+      "unknownId": "ID média inconnu : {{id}}",
+      "playback": "Erreur de lecture."
+    }
+  }
+}
