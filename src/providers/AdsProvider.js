@@ -1,12 +1,14 @@
 // File: src/providers/AdsProvider.js
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import * as TT from 'expo-tracking-transparency';
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { Platform } from 'react-native';
 import mobileAds, {
   AdEventType,
   AdsConsent,
   InterstitialAd,
-  TestIds
+  MaxAdContentRating,
+  TestIds,
 } from 'react-native-google-mobile-ads';
 
 // ─────────────────────────────────────────────────────────────
@@ -60,27 +62,62 @@ const AdsCtx = createContext({
   state: { loaded: false, isShowing: false, dayCount: 0, lastShownAt: 0 },
 });
 
+/**
+ * ATT (iOS) → UMP consent → GMA request config → AdMob initialize
+ * Redosled je bitan: ATT mora PRE initialize().
+ */
 async function initAdsWithConsent() {
   try {
-    console.log('[ads] consent: requestInfoUpdate()…');
-    const info = await AdsConsent.requestInfoUpdate();
-    console.log('[ads] consent: isConsentFormAvailable=', info?.isConsentFormAvailable);
+    // 1) iOS ATT prompt pre svega ostalog
+    if (Platform.OS === 'ios') {
+      try {
+        const { status } = await TT.getTrackingPermissionsAsync();
+        if (status !== 'granted') {
+          await TT.requestTrackingPermissionsAsync();
+        }
+        console.log('[ads] ATT status checked');
+      } catch (e) {
+        console.log('[ads] ATT error:', String(e));
+      }
+    }
 
-    if (info.isConsentFormAvailable) {
-      console.log('[ads] consent: loadAndShowConsentFormIfRequired()…');
-      await AdsConsent.loadAndShowConsentFormIfRequired();
-      console.log('[ads] consent: form handled');
+    // 2) UMP (GDPR) consent
+    try {
+      console.log('[ads] consent: requestInfoUpdate()…');
+      const info = await AdsConsent.requestInfoUpdate();
+      console.log('[ads] consent: isConsentFormAvailable=', info?.isConsentFormAvailable);
+      if (info.isConsentFormAvailable) {
+        console.log('[ads] consent: loadAndShowConsentFormIfRequired()…');
+        await AdsConsent.loadAndShowConsentFormIfRequired();
+        console.log('[ads] consent: form handled');
+      }
+    } catch (e) {
+      console.log('[ads] consent error:', String(e));
+    }
+
+    // 3) Globalna GMA konfiguracija (pre initialize)
+    try {
+      await mobileAds().setRequestConfiguration({
+        maxAdContentRating: MaxAdContentRating.PG,
+        tagForChildDirectedTreatment: false,
+        tagForUnderAgeOfConsent: false,
+        // testDeviceIdentifiers: ['EMULATOR'], // po želji
+      });
+      console.log('[ads] mobileAds.setRequestConfiguration() done');
+    } catch (e) {
+      console.log('[ads] setRequestConfiguration error:', String(e));
+    }
+
+    // 4) AdMob init tek nakon ATT + UMP + config
+    try {
+      console.log('[ads] mobileAds.initialize()…');
+      await mobileAds().initialize();
+      console.log('[ads] mobileAds.initialize() done');
+    } catch (e) {
+      console.log('[ads] mobileAds init error:', String(e));
     }
   } catch (e) {
-    console.log('[ads] consent error:', String(e));
-  }
-
-  try {
-    console.log('[ads] mobileAds.initialize()…');
-    await mobileAds().initialize();
-    console.log('[ads] mobileAds.initialize() done');
-  } catch (e) {
-    console.log('[ads] mobileAds init error:', String(e));
+    console.log('[ads] initAdsWithConsent top-level error:', String(e));
   }
 }
 

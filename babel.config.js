@@ -9,9 +9,10 @@ module.exports = function (api) {
         {
           root: ['./'],
           alias: { '@': './src' },
-          extensions: ['.js', '.jsx', '.ts', '.tsx', '.json']
+          extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
         },
       ],
+      'react-native-reanimated/plugin', // <-- OVO MORA BITI POSLEDNJE
     ],
   };
 };

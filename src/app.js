@@ -1,24 +1,26 @@
-// File: src/App.js
+
+
 import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { setAudioModeAsync } from 'expo-audio';
+import * as Linking from 'expo-linking';
+import * as Notifications from 'expo-notifications';
 import React, { Suspense, useEffect, useRef } from 'react';
 import { I18nextProvider } from 'react-i18next';
 import { ActivityIndicator, StatusBar, View } from 'react-native';
-import 'react-native-gesture-handler';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Toast from 'react-native-toast-message';
 
-import * as Linking from 'expo-linking';
-import * as Notifications from 'expo-notifications';
-import { registerPushToken } from './lib/push/registerPushToken';
-
 import AppHeader from './components/AppHeader';
 import i18n from './i18n';
+import { registerPushToken } from './lib/push/registerPushToken';
 import { navigationRef } from './navigation/navigationRef';
 import { AuthProvider, useAuth } from './providers/AuthProvider';
 import { SoundProvider } from './providers/SoundProvider';
+
+// ✅ DODAJ OVAJ IMPORT (inače će release pasti u “white screen”)
+import { AdsProvider } from './providers/AdsProvider'; // ako nemaš ovaj fajl, ukloni <AdsProvider> wrap dole
 
 import HomeScreen from './screens/HomeScreen';
 import InterpretationScreen from './screens/InterpretationScreen';
@@ -42,7 +44,14 @@ const Stack = createNativeStackNavigator();
 
 const navTheme = {
   ...DefaultTheme,
-  colors: { ...DefaultTheme.colors, background: '#000000', card: '#0a0a0a', text: '#ffffff', border: '#111', primary: '#9b87f5' },
+  colors: {
+    ...DefaultTheme.colors,
+    background: '#000000',
+    card: '#0a0a0a',
+    text: '#ffffff',
+    border: '#111',
+    primary: '#9b87f5',
+  },
 };
 
 // 🔔 prikaži notifikacije i u foreground-u
@@ -75,8 +84,8 @@ function AppStack() {
   return (
     <Stack.Navigator
       initialRouteName="Home"
-      screenOptions={{ header: () => <AppHeader />, contentStyle: { backgroundColor: '#000' }
-    }}>
+      screenOptions={{ header: () => <AppHeader />, contentStyle: { backgroundColor: '#000' } }}
+    >
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="SupaDiag" component={SupaDiagScreen} />
       <Stack.Screen name="Interpretation" component={InterpretationScreen} />
@@ -117,26 +126,20 @@ function NavShell() {
   const pendingUrlRef = useRef(null);
   const seenUrlsRef = useRef(new Set());
 
-  // helper: da li je ovo Supabase OAuth callback?
-  const isAuthCallback = (url) =>
-    /^com\.mare82\.aisanovnik:\/\/auth(\/callback)?\b/i.test(String(url));
+  const isAuthCallback = (url) => /^com\.mare82\.aisanovnik:\/\/auth(\/callback)?\b/i.test(String(url));
 
-  // 🧭 Rutiranje iz deeplinka (sa prosleđivanjem auth callbacka u AuthProvider)
   const handleDeeplink = (url) => {
     try {
       if (!url) return;
 
-      // dedupe: spreči duplo procesiranje istog URL-a
       if (seenUrlsRef.current.has(url)) return;
       seenUrlsRef.current.add(url);
 
-      // ✅ PROSLEDI AUTH CALLBACK AuthProvider-u da setuje session
       if (isAuthCallback(url)) {
         processAuthUrl?.(url);
         return;
       }
 
-      // ako navigator još nije spreman — sačuvaj i obradi kad postane spreman
       if (!navigationRef.current) {
         pendingUrlRef.current = url;
         return;
@@ -162,7 +165,6 @@ function NavShell() {
     }
   };
 
-  // 🔗 Tap na notifikaciju dok je app u memoriji
   useEffect(() => {
     const sub = Notifications.addNotificationResponseReceivedListener((resp) => {
       const url = resp?.notification?.request?.content?.data?.url;
@@ -171,7 +173,6 @@ function NavShell() {
     return () => sub.remove();
   }, []);
 
-  // ⬇️ 1) Cold start iz deeplinka (prvo proveri da li je auth callback)
   useEffect(() => {
     (async () => {
       try {
@@ -186,21 +187,22 @@ function NavShell() {
     })();
   }, []);
 
-  // ⬇️ 2) Dok je app u memoriji: slušaj globalne 'url' evente
   useEffect(() => {
     const sub = Linking.addEventListener('url', (e) => {
       if (!e?.url) return;
-      // auth callback ide direktno u AuthProvider
       if (isAuthCallback(e.url)) {
         processAuthUrl?.(e.url);
         return;
       }
       handleDeeplink(String(e.url));
     });
-    return () => { try { sub.remove(); } catch {} };
+    return () => {
+      try {
+        sub.remove();
+      } catch {}
+    };
   }, []);
 
-  // ❄️ Cold start: otvori deeplink ako je app pokrenut iz notifikacije
   useEffect(() => {
     (async () => {
       const resp = await Notifications.getLastNotificationResponseAsync();
@@ -214,28 +216,23 @@ function NavShell() {
     })();
   }, []);
 
-  // ✅ Respectuj korisnički izbor notifikacija (default ON), i sinhronizuj sa DB
   useEffect(() => {
     (async () => {
       if (!(isAuthenticated && session?.user?.id)) return;
 
       const pref = await AsyncStorage.getItem('settings:notifications');
-      const enabled = (pref === null || pref === '1'); // default ON
+      const enabled = pref === null || pref === '1'; // default ON
 
       if (enabled) {
         registerPushToken(session.user.id, i18n.language).catch(() => {});
       } else {
         try {
-          await supabase
-            .from('push_devices')
-            .update({ disabled: true })
-            .eq('user_id', session.user.id);
+          await supabase.from('push_devices').update({ disabled: true }).eq('user_id', session.user.id);
         } catch {}
       }
     })();
   }, [isAuthenticated, session?.user?.id, i18n.language]);
 
-  // 🚦 Obradi pending URL kad navigator postane spreman
   const onNavReady = () => {
     if (pendingUrlRef.current) {
       const url = pendingUrlRef.current;
@@ -260,12 +257,14 @@ function NavShell() {
 }
 
 export default function App() {
-  useEffect(() => { setAudioModeAsync({ playsInSilentMode: true }).catch(() => {}); }, []);
+  useEffect(() => {
+    setAudioModeAsync({ playsInSilentMode: true }).catch(() => {});
+  }, []);
   return (
     <I18nextProvider i18n={i18n}>
       <Suspense fallback={<I18nFallback />}>
         <AuthProvider>
-           <AdsProvider>  
+          <AdsProvider>
             <SoundProvider>
               <GestureHandlerRootView style={{ flex: 1 }}>
                 <SafeAreaProvider>
@@ -273,7 +272,7 @@ export default function App() {
                 </SafeAreaProvider>
               </GestureHandlerRootView>
             </SoundProvider>
-           </AdsProvider> 
+          </AdsProvider>
         </AuthProvider>
       </Suspense>
     </I18nextProvider>

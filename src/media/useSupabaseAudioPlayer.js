@@ -1,6 +1,6 @@
 // File: src/media/useSupabaseAudioPlayer.js
 import { createAudioPlayer, setAudioModeAsync } from 'expo-audio';
-// ✅ SDK 54: koristimo legacy API da zadržimo getInfoAsync/downloadAsync
+// ✅ SDK 54: legacy FS API da zadržimo getInfoAsync/downloadAsync
 import * as FileSystem from 'expo-file-system/legacy';
 import { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -140,6 +140,35 @@ export function useSupabaseAudioPlayer() {
     return localPath; // "file://..."
   }
 
+  // ---- NOVO: instant play + background cache za kratke fajlove ----
+  async function playUri(uri) {
+    player.replace(uri);
+    player.seekTo(0);
+    await player.play();
+  }
+
+  const bgDownloads = new Map(); // dedupe po id-u
+  async function streamThenCache(meta) {
+    const url = await signedUrl(meta, 900); // 15 min sasvim dosta
+    await playUri(url);                      // ⟵ odmah kreće
+
+    const local = localPathFor(meta);
+    const info = await fileInfo(local);
+    if (info.exists) return;                 // već keširano
+
+    if (!bgDownloads.has(meta.id)) {
+      const p = (async () => {
+        try {
+          await ensureCacheDir();
+          await FileSystem.downloadAsync(url, local);
+          await markAccess(local);
+          await enforceCap();
+        } catch {}
+      })().finally(() => bgDownloads.delete(meta.id));
+      bgDownloads.set(meta.id, p);
+    }
+  }
+
   // ---------- Javni API ----------
   async function playById(id) {
     setError(null);
@@ -154,14 +183,22 @@ export function useSupabaseAudioPlayer() {
     try {
       const streamLong = meta.group === 'long';
 
-      // Streamuj duge (TTL 3h), keširaj ostalo
-      const uri = streamLong
-        ? await signedUrl(meta, LONG_STREAM_MIN_SEC) // 3 sata, bez downloada
-        : await getLocalUri(meta);                   // cache-first lokalni fajl
+      if (streamLong) {
+        // Dugi fajlovi: direkt stream (instant), TTL 3h
+        const url = await signedUrl(meta, LONG_STREAM_MIN_SEC);
+        await playUri(url);
+      } else {
+        // Kratki: lokalno ako postoji; ako ne — stream sada, keširaj u pozadini
+        const local = localPathFor(meta);
+        const info = await fileInfo(local);
+        if (info.exists) {
+          await markAccess(local);
+          await playUri(local);
+        } else {
+          await streamThenCache(meta); // ⟵ instant start + background cache
+        }
+      }
 
-      player.replace(uri);
-      player.seekTo(0);
-      player.play();
       setNow(id);
       setStatus({ playing: true });
     } catch (e) {
@@ -188,9 +225,7 @@ export function useSupabaseAudioPlayer() {
       (Array.isArray(MEDIA) ? MEDIA.find((m) => m && m.id === id) : null);
     if (!meta) return;
 
-    // Ne preuzimamo "long" grupu unapred — streamuje se
-    if (meta.group === 'long') return;
-
+    if (meta.group === 'long') return; // long se streamuje, ne preuzimamo
     try { await getLocalUri(meta); } catch {}
   }
 
@@ -206,6 +241,7 @@ export function useSupabaseAudioPlayer() {
     delete idx[lp];
     await writeIndex(idx);
   }
+
   async function clearAll() {
     try { await FileSystem.deleteAsync(CACHE_DIR, { idempotent: true }); } catch {}
     await ensureCacheDir();

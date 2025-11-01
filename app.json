@@ -3,13 +3,13 @@
     "name": "DreamCodex AI",
     "slug": "ai-sanovnik",
     "owner": "mare82",
-    "version": "1.4",
+    "version": "1.7",
     "orientation": "portrait",
     "scheme": "com.mare82.aisanovnik",
     "android": {
       "package": "com.mare82.aisanovnik",
       "googleServicesFile": "google-services.json",
-      "versionCode": 5,
+      "versionCode": 7,
       "permissions": [
         "com.google.android.gms.permission.AD_ID",
         "android.permission.POST_NOTIFICATIONS"
@@ -56,7 +56,7 @@
     },
     "ios": {
       "bundleIdentifier": "com.mare82.aisanovnik",
-      "buildNumber": "5",
+      "buildNumber": "7",
       "infoPlist": {
         "NSUserTrackingUsageDescription": "Used to show relevant ads and support the app."
       }
@@ -78,8 +78,7 @@
           "androidAppId": "ca-app-pub-2786609619751533~9204499845",
           "iosAppId": "ca-app-pub-2786609619751533~1584002451"
         }
-      ],
-      "expo-asset"
+      ]     
     ],
     "notification": {
       "iosDisplayInForeground": true,
