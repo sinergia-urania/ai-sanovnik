@@ -6,7 +6,6 @@
     "version": "1.4",
     "orientation": "portrait",
     "scheme": "com.mare82.aisanovnik",
-
     "android": {
       "package": "com.mare82.aisanovnik",
       "googleServicesFile": "google-services.json",
@@ -14,56 +13,82 @@
       "permissions": [
         "com.google.android.gms.permission.AD_ID",
         "android.permission.POST_NOTIFICATIONS"
-       
       ],
       "intentFilters": [
-      {
-        "action": "VIEW",
-        "autoVerify": false,
-        "category": ["BROWSABLE", "DEFAULT"],
-        "data": [
-          { "scheme": "com.mare82.aisanovnik" }
-        ]
-      },
-     {
-        "action": "VIEW",
-        "autoVerify": false,
-        "category": ["BROWSABLE", "DEFAULT"],
-        "data": [
-          { "scheme": "com.mare82.aisanovnik", "host": "auth", "pathPrefix": "/callback" },
-          { "scheme": "com.mare82.aisanovnik", "host": "auth" },
-          { "scheme": "com.mare82.aisanovnik", "host": "auth", "pathPattern": ".*" }
-        ]
-      }
-    ]
+        {
+          "action": "VIEW",
+          "autoVerify": false,
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ],
+          "data": [
+            {
+              "scheme": "com.mare82.aisanovnik"
+            }
+          ]
+        },
+        {
+          "action": "VIEW",
+          "autoVerify": false,
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ],
+          "data": [
+            {
+              "scheme": "com.mare82.aisanovnik",
+              "host": "auth",
+              "pathPrefix": "/callback"
+            },
+            {
+              "scheme": "com.mare82.aisanovnik",
+              "host": "auth"
+            },
+            {
+              "scheme": "com.mare82.aisanovnik",
+              "host": "auth",
+              "pathPattern": ".*"
+            }
+          ]
+        }
+      ]
     },
-
     "ios": {
       "bundleIdentifier": "com.mare82.aisanovnik",
+      "buildNumber": "5",
       "infoPlist": {
         "NSUserTrackingUsageDescription": "Used to show relevant ads and support the app."
       }
     },
-
     "plugins": [
       "expo-dev-client",
-      ["expo-audio", { "microphonePermission": "Allow DreamCodex AI to access your microphone." }],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Allow DreamCodex AI to access your microphone."
+        }
+      ],
       "expo-tracking-transparency",
       "expo-web-browser",
       "expo-notifications",
-      ["react-native-google-mobile-ads", {
-        "androidAppId": "ca-app-pub-2786609619751533~9204499845",
-        "iosAppId": "ca-app-pub-2786609619751533~1584002451"
-      }]
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-2786609619751533~9204499845",
+          "iosAppId": "ca-app-pub-2786609619751533~1584002451"
+        }
+      ],
+      "expo-asset"
     ],
-
     "notification": {
       "iosDisplayInForeground": true,
       "color": "#9b87f5"
     },
-
     "extra": {
-      "eas": { "projectId": "e5abc1e7-6bb5-4c80-bb82-42c30f17d129" }
+      "eas": {
+        "projectId": "e5abc1e7-6bb5-4c80-bb82-42c30f17d129"
+      }
     }
   }
 }
