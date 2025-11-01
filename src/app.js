@@ -265,7 +265,7 @@ export default function App() {
     <I18nextProvider i18n={i18n}>
       <Suspense fallback={<I18nFallback />}>
         <AuthProvider>
-          {/* <AdsProvider>  // TEMP OFF */}
+           <AdsProvider>  
             <SoundProvider>
               <GestureHandlerRootView style={{ flex: 1 }}>
                 <SafeAreaProvider>
@@ -273,7 +273,7 @@ export default function App() {
                 </SafeAreaProvider>
               </GestureHandlerRootView>
             </SoundProvider>
-          {/* </AdsProvider> */}
+           </AdsProvider> 
         </AuthProvider>
       </Suspense>
     </I18nextProvider>
